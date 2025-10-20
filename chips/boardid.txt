@@ -1,8 +1,7 @@
-USB Beetle (clone of Arduino Leonardo)
 
-VID 0x16c0
-PID 0x0483
+# USB Beetle (clone of Arduino Leonardo)
 
-avrdude command line to write over 'Arduino as ISP'
+## Board ID over USB
 
-This is all still WIP, no success yet.
+ - VID 0x16c0
+ - PID 0x0483
