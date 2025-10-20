@@ -1,47 +1,49 @@
 
-# Der Stoff der Algorithmischen Mathematik nach Wochen
+# Der Stoff der Algorithmischen Mathematik I
 
 Bitte beachten Sie: diese Liste der Themen ist
 
- - vorlaeufig, kann sich also jederzeit aendern
- - unvollstaendig, es fehlt also alles Moegliche
- - optimistisch, da ich die Zeit unterschaetze
+ - vorläufig, kann sich also jederzeit ändern,
+ - unvollständig, es fehlt also alles Mögliche,
+ - optimistisch, da ich die Zeit unterschätze,
+ - und bezieht sich auf das Wintersemester 25/26.
 
 ## Woche 1
 
  - Motivation zu Algorithmen
  - Motivation zum Speicher- und Rechenaufwand
- - Zaehlen im Stellensystem
- - Thema Mathematische Logik
+ - Zählen im Stellensystem
+ - Thema mathematische Logik
 
 ## Woche 2
 
  - Mathematische und programmatische Logik
- - logische Operatoren, Praezedenz, Assoziativitaet
- - Demonstration von Unix-Shell, Editor
+ - logische Operatoren, Präzedenz, Assoziativität
+ - Demonstration von Unix-Shell und Editor
  - Programmieren von Hello World in C
  - Grundlagen Funktionsaufrufe in C
  - Das Zweiersystem zur Zahlendarstellung
- - Die natuerlichen Zahlen und bitweise Operatoren
+ - Die natürlichen Zahlen und bitweise Operatoren
 
 ## Woche 3
 
  - Negative Zahlen und Zweierkomplement
  - Subtraktion als Addition
- - Ueberlauf von signed und unsigned Variablen
- - Die natuerlichen Zahlen und arithmetische Operatoren
+ - Überlauf von signed und unsigned Variablen
+ - Die natürlichen Zahlen und arithmetische Operatoren
  - Richtlinien zur Auswahl von Ganzzahl-Typen
- - Die Multiplikation auf ganzen Zahlen
- - Schriftliche Division ganzer Zahlen
+ - Die Multiplikation über ganzen Zahlen
+ - Algorithmische Division ganzer Zahlen
  - Alle logischen und arithmetischen Operatoren in C
 
 ## Option A
 
+ - Zusammenfassung Zuweisungsoperatoren
  - Listen, Arrays, Indizierung, Pointer in C
- - Zuweisungsoperatoren, Klammeroperatoren in C
- - Sortieralgorithmen und ihre Komplexitaet
+ - Klammeroperatoren in C (rund und eckig)
+ - Sortieralgorithmen und ihre Komplexität
 
 ## Option B
 
  - Gleitkommazahlen und ihre Darstellung im Computer
- - Genauigkeit, Rundungsfehler, Ausloeschung
+ - Demonstration Genauigkeit, Rundungsfehler, Auslöschung
