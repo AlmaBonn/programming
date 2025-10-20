@@ -2,6 +2,8 @@
 
 The main purpose of this repository is to support the Wiki.
 
-We will also use this it to collect example programs.
+We will use it to collect occasional example programs.
 
-There is also an inofficial list of the [lecture's contents](almawochen.md).
+We also provide a [rationale for choosing hardware](elementar.md).
+
+There is an inofficial list of the [lecture's contents](almawochen.md).
