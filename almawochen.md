@@ -22,8 +22,9 @@ Bitte beachten Sie: diese Liste der Themen ist
  - Demonstration von Unix-Shell und Editor
  - Programmieren von Hello World in C
  - Grundlagen Funktionsaufrufe in C
+ - Definition der natürlichen Zahlen
  - Das Zweiersystem zur Zahlendarstellung
- - Die natürlichen Zahlen und bitweise Operatoren
+ - Bitweise Operatoren
 
 ## Woche 3
 
