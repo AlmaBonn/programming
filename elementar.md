@@ -77,9 +77,10 @@ nicht wirklich verstehen.
 Dagegen ist die Laufzeit aller Instruktionen des Mikrocontrollers exakt
 bekannt.
 
-Ein Hauptspeicherzugriff einer modernen CPU dauert etwa 100mal so lange wie
-eine Rechenoperation.  Man mißt also im wesentliche die Anzahl der
-Speicherzugriffe eines Algorithmus und nicht seine Rechenzeit.
+Ein Hauptspeicherzugriff einer modernen CPU dauert bis zu 100mal so lange
+wie eine Rechenoperation.
+Man mißt also im Wesentlichen die Anzahl der Speicherzugriffe eines
+Algorithmus und nicht seine Rechenzeit.
 Bei einem Mikrocontroller mit simpler Speicherarchitektur ist das Verhältnis
 dagegen etwa 1:1, so daß die tatsächliche Rechenzeit signifikant in die
 Laufzeit eingeht.
