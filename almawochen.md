@@ -30,11 +30,13 @@ Bitte beachten Sie: diese Liste der Themen ist
 
 ## Woche 3
 
+ - Darstellung von Variablen als Bitstring
+ - Bitweise Operatoren: Neg, XOR, Logik, Shift
  - Definition der natürlichen Zahlen
  - Das Zweiersystem zur Zahlendarstellung
  - Negative Zahlen und Zweierkomplement
- - Bitweise Operatoren: XOR, Logik und Shift
  - Addition und Subtraktion von C-Ganzzahlen
+ - Numerische Vergleichsoperatoren
  - Überlauf von signed- und unsigned-Variablen
  - Richtlinien zur Auswahl von Ganzzahl-Typen
  - Promotionsregeln und Casts in C
@@ -57,4 +59,5 @@ Bitte beachten Sie: diese Liste der Themen ist
 
 ## Woche 6
 
+ - Erweiterte Theorie Zweierkomplement
  - Gleitkommatheorie: Genauigkeit, Rundungsfehler, Auslöschung
