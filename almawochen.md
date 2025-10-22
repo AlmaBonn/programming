@@ -20,31 +20,41 @@ Bitte beachten Sie: diese Liste der Themen ist
  - Mathematische und programmatische Logik
  - logische Operatoren, Präzedenz, Assoziativität
  - Demonstration von Unix-Shell und Editor
- - Programmieren von Hello World in C
+ - Mengen (überspringen)
+ - Grundlagen Variablen in C
  - Grundlagen Funktionsaufrufe in C
- - Definition der natürlichen Zahlen
- - Das Zweiersystem zur Zahlendarstellung
- - Bitweise Operatoren
+ - Grundlagen Arrays in C
+ - Klammeroperatoren in C (rund und eckig)
+ - Programmieren von Hello World in C
+ - Demo zu Variablen, Arrays, Funktionen
 
 ## Woche 3
 
+ - Definition der natürlichen Zahlen
+ - Das Zweiersystem zur Zahlendarstellung
  - Negative Zahlen und Zweierkomplement
- - Subtraktion als Addition
- - Überlauf von signed und unsigned Variablen
- - Die natürlichen Zahlen und arithmetische Operatoren
+ - Bitweise Operatoren: XOR, Logik und Shift
+ - Addition und Subtraktion von C-Ganzzahlen
+ - Überlauf von signed- und unsigned-Variablen
  - Richtlinien zur Auswahl von Ganzzahl-Typen
+ - Promotionsregeln und Casts in C
+
+## Woche 4
+
  - Die Multiplikation über ganzen Zahlen
  - Algorithmische Division ganzer Zahlen
+ - Gleitkommazahlen und ihre Darstellung im Computer
  - Alle logischen und arithmetischen Operatoren in C
-
-## Option A
-
  - Zusammenfassung Zuweisungsoperatoren
- - Listen, Arrays, Indizierung, Pointer in C
- - Klammeroperatoren in C (rund und eckig)
+
+## Woche 5
+
+ - Strukturen in C
+ - Pointer in C
+ - Dynamischer Speicher in C
+ - Gesamttabelle Operatoren in C
  - Sortieralgorithmen und ihre Komplexität
 
-## Option B
+## Woche 6
 
- - Gleitkommazahlen und ihre Darstellung im Computer
- - Demonstration Genauigkeit, Rundungsfehler, Auslöschung
+ - Gleitkommatheorie: Genauigkeit, Rundungsfehler, Auslöschung
