@@ -20,17 +20,17 @@ Bitte beachten Sie: diese Liste der Themen ist
  - Mathematische und programmatische Logik
  - logische Operatoren, Präzedenz, Assoziativität
  - Demonstration von Unix-Shell und Editor
- - Mengen (überspringen)
  - Grundlagen Variablen in C
  - Grundlagen Funktionsaufrufe in C
- - Grundlagen Arrays in C
+ - Grundlagen Arrays und Strings in C
+ - Vorschau for- und while-Schleifen
  - Klammeroperatoren in C (rund und eckig)
  - Programmieren von Hello World in C
- - Demo zu Variablen, Arrays, Funktionen
- - Demo zu if-Abfragen und for-Schleife
+ - Demo zu Variablen, Arrays und Funktionen
 
 ## Woche 3
 
+ - if-Abfragen, Kontrollfluß und Rekursion
  - Darstellung von Variablen als Bitstring
  - Bitweise Operatoren: Neg, XOR, Logik, Shift
  - Definition der natürlichen Zahlen
@@ -40,7 +40,7 @@ Bitte beachten Sie: diese Liste der Themen ist
  - Numerische Vergleichsoperatoren
  - Überlauf von signed- und unsigned-Variablen
  - Richtlinien zur Auswahl von Ganzzahl-Typen
- - Promotionsregeln und Casts in C
+ - Promotionsregeln und Cast in C
 
 ## Woche 4
 
