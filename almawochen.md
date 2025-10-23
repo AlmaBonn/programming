@@ -27,6 +27,7 @@ Bitte beachten Sie: diese Liste der Themen ist
  - Klammeroperatoren in C (rund und eckig)
  - Programmieren von Hello World in C
  - Demo zu Variablen, Arrays, Funktionen
+ - Demo zu if-Abfragen und for-Schleife
 
 ## Woche 3
 
