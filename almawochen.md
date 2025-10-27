@@ -40,27 +40,25 @@ Bitte beachten Sie: diese Liste der Themen ist
  - Addition und Subtraktion von C-Ganzzahlen
  - Numerische Vergleichsoperatoren
  - Beispiele Arithmetik und Rekursion
- - Überlauf von signed- und unsigned-Variablen
- - Richtlinien zur Auswahl von Ganzzahl-Typen
- - Promotionsregeln und Cast in C
 
 ## Woche 4
 
+ - Überlauf von signed- und unsigned-Variablen
+ - Richtlinien zur Auswahl von Ganzzahl-Typen
+ - Promotionsregeln und Cast in C
  - Die Multiplikation über ganzen Zahlen
  - Algorithmische Division ganzer Zahlen
- - Gleitkommazahlen und ihre Darstellung im Computer
  - Alle logischen und arithmetischen Operatoren in C
- - Zusammenfassung Zuweisungsoperatoren
+ - Gleitkommazahlen und ihre Darstellung im Computer
 
 ## Woche 5
 
- - Strukturen in C
- - Pointer in C
- - Dynamischer Speicher in C
- - Gesamttabelle Operatoren in C
  - Sortieralgorithmen und ihre Komplexität
 
 ## Woche 6
 
  - Erweiterte Theorie Zweierkomplement
  - Gleitkommatheorie: Genauigkeit, Rundungsfehler, Auslöschung
+ - Strukturen in C
+ - Pointer in C
+ - Dynamischer Speicher in C
