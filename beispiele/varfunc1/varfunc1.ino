@@ -33,6 +33,7 @@ void wir (void) {
     /* Zuweisung zu einem Element des Arrays c */
     c[a] = 18 + a;
   }
+  /* die Werte ab c[10] sind nach wie vor undefiniert */
 
   /* weitere Details dazu siehe 'man 3 printf' */
   snprintf (zeile, 72, "Hallo wir haben %d und %d\n",
