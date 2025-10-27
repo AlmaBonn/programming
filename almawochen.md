@@ -30,14 +30,16 @@ Bitte beachten Sie: diese Liste der Themen ist
 
 ## Woche 3
 
- - if-Abfragen, Kontrollfluß und Rekursion
+ - if-Abfragen
  - Darstellung von Variablen als Bitstring
  - Bitweise Operatoren: Neg, XOR, Logik, Shift
+ - Demonstration LFSR und Kontrollfluss
  - Definition der natürlichen Zahlen
  - Das Zweiersystem zur Zahlendarstellung
  - Negative Zahlen und Zweierkomplement
  - Addition und Subtraktion von C-Ganzzahlen
  - Numerische Vergleichsoperatoren
+ - Beispiele Arithmetik und Rekursion
  - Überlauf von signed- und unsigned-Variablen
  - Richtlinien zur Auswahl von Ganzzahl-Typen
  - Promotionsregeln und Cast in C
