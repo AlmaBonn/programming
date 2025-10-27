@@ -9,9 +9,9 @@ setup (void)
 {
 	/* Konsolenoutput aufsetzen */
 	Serial.begin (9600);
-	while (!Serial) ;
+        delay (500);
 
-	/* einmaliger Vorbereitungscode */
+	/* einmalig ausgefuehrter Vorbereitungscode */
 	pinMode (LED_PIN, OUTPUT);
 	led_millis = millis ();
 }
@@ -39,7 +39,7 @@ loop (void)
 		}
 		if  (++step == numsteps) {
 			step = 0;
-			//Serial.write ("Another sequence done.\n");
+			Serial.write ("Another sequence done.\n");
 		}
 	}
 }
