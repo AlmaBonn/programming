@@ -6,10 +6,10 @@ static unsigned int led_millis;
 uint16_t
 lfsr_schritt (void) {
 
-        /* Wert bleibt über mehrere Aufrufe erhalten */
+        /* static Wert bleibt über mehrere Aufrufe erhalten */
         static uint16_t wort = 1;
 
-        /* lokale Variablen in jedem Aufruf neu */
+        /* lokale Variablen in jedem Aufruf neu erstellt */
 	uint16_t msb, zwi;
 
         /* gebe MSB aus */
@@ -34,6 +34,8 @@ setup (void)
 {
         /* initialisieren der Konsolenausgabe */
 	Serial.begin (9600);
+
+        /* warte ein wenig, aber blockiere nicht ohne IDE */
         delay (500);
 
         /* eingebaute LED aktivieren */
@@ -46,7 +48,7 @@ setup (void)
 void
 loop (void)
 {
-        /* wieviel Zeit ist vergangen */
+        /* wieviel Zeit ist vergangen seit dem letzten loop */
 	const unsigned int led_diff = millis () - led_millis;
 	if (led_diff >= duration) {
                 /* unsigned mit wohldefiniertem overflow */
@@ -54,10 +56,10 @@ loop (void)
 
 		/* schritt ausfuehren und rueckgabe auswerten */
 		if (lfsr_schritt ()) {
-			digitalWrite (LED_PIN, HIGH);
+			digitalWrite (LED_BUILTIN, HIGH);
                 }
                 else {
-		        digitalWrite (LED_PIN, LOW);
+		        digitalWrite (LED_BUILTIN, LOW);
 		}
 	}
 }
