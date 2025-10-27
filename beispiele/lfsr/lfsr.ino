@@ -1,20 +1,19 @@
 
-
-#include <stdio.h>
-
-#define LED_PIN LED_BUILTIN
-
+/* Kontextvariablen fuer die Zeitmessung */
+static const unsigned int duration = 100;
 static unsigned int led_millis;
 
-static uint16_t wort = 1;
-
 uint16_t
-schritt (void) {
+lfsr_schritt (void) {
 
+        /* Wert bleibt über mehrere Aufrufe erhalten */
+        static uint16_t wort = 1;
+
+        /* lokale Variablen in jedem Aufruf neu */
 	uint16_t msb, zwi;
 
         /* gebe MSB aus */
-        msb = (wort >> 15);
+        msb = wort >> 15;
         Serial.println (msb);
 
 	/* bereche naechsten Wert fuers LSB */
@@ -23,39 +22,38 @@ schritt (void) {
                (wort >> 12) ^
                (wort >> 10)) & 1;
 
-        /* schiebe links und update LSB */
+        /* schiebe nach links und update LSB */
         wort = (wort << 1) | zwi;
 
-        /* rueckgabe */
+        /* rueckgabewert */
         return msb;
 }
 
 void
 setup (void)
 {
+        /* initialisieren der Konsolenausgabe */
 	Serial.begin (9600);
-	while (!Serial) ;
+        delay (500);
 
-	pinMode (LED_PIN, OUTPUT);
+        /* eingebaute LED aktivieren */
+	pinMode (LED_BUILTIN, OUTPUT);
+
+        /* aktuelle Systemzeit in ms modulo 1000 */
 	led_millis = millis ();
 }
 
 void
 loop (void)
 {
-	static unsigned char step;
-	static const unsigned char numsteps = 1;
-	static const unsigned int duration[numsteps] = { 100 };
-        uint16_t msb;
-
+        /* wieviel Zeit ist vergangen */
 	const unsigned int led_diff = millis () - led_millis;
-	if (led_diff >= duration[step]) {
-		led_millis += duration[step];
+	if (led_diff >= duration) {
+                /* unsigned mit wohldefiniertem overflow */
+		led_millis += duration;
 
-		/* schritt ausfuehren */
-                msb = schritt ();
-
-		if (msb) {
+		/* schritt ausfuehren und rueckgabe auswerten */
+		if (lfsr_schritt ()) {
 			digitalWrite (LED_PIN, HIGH);
                 }
                 else {
