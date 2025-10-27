@@ -24,7 +24,7 @@ void wir (void) {
   /* Variable fuer eine Zeichenkette */
   char zeile[72];
 
-  /* wir warten bis die USB-Verbindung besteht */
+  /* wir warten bis der Serial Monitor geoeffnet wird */
   Serial.begin (9600);
   while (!Serial) { /* leerer Block zum Warten */ }
 
