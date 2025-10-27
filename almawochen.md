@@ -33,13 +33,16 @@ Bitte beachten Sie: diese Liste der Themen ist
  - if-Abfragen
  - Darstellung von Variablen als Bitstring
  - Bitweise Operatoren: Neg, XOR, Logik, Shift
- - Demonstration LFSR und Kontrollfluss
+ - Setzen, ändern und lesen von Bits
+ - Präzedenz bitweise Operatoren
+ - Demonstration LFSR
  - Definition der natürlichen Zahlen
  - Das Zweiersystem zur Zahlendarstellung
  - Negative Zahlen und Zweierkomplement
  - Addition und Subtraktion von C-Ganzzahlen
  - Numerische Vergleichsoperatoren
  - Beispiele Arithmetik und Rekursion
+ - Kontrollfluß für Schleifen
 
 ## Woche 4
 
