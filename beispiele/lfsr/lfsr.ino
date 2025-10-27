@@ -10,14 +10,14 @@ lfsr_schritt (void) {
         static uint16_t wort = 1;
 
         /* lokale Variablen in jedem Aufruf neu erstellt */
-	uint16_t msb, zwi;
+        uint16_t msb, zwi;
 
         /* gebe MSB aus */
         msb = wort >> 15;
         Serial.println (msb);
 
-	/* bereche naechsten Wert fuers LSB */
-	zwi = (msb ^
+        /* bereche naechsten Wert fuers LSB */
+        zwi = (msb ^
                (wort >> 13) ^
                (wort >> 12) ^
                (wort >> 10)) & 1;
@@ -33,33 +33,33 @@ void
 setup (void)
 {
         /* initialisieren der Konsolenausgabe */
-	Serial.begin (9600);
+        Serial.begin (9600);
 
         /* warte ein wenig, aber blockiere nicht ohne IDE */
         delay (500);
 
         /* eingebaute LED aktivieren */
-	pinMode (LED_BUILTIN, OUTPUT);
+        pinMode (LED_BUILTIN, OUTPUT);
 
         /* aktuelle Systemzeit in ms modulo 1000 */
-	led_millis = millis ();
+        led_millis = millis ();
 }
 
 void
 loop (void)
 {
         /* wieviel Zeit ist vergangen seit dem letzten loop */
-	const unsigned int led_diff = millis () - led_millis;
-	if (led_diff >= duration) {
+        const unsigned int led_diff = millis () - led_millis;
+        if (led_diff >= duration) {
                 /* unsigned mit wohldefiniertem overflow */
-		led_millis += duration;
+                led_millis += duration;
 
-		/* schritt ausfuehren und rueckgabe auswerten */
-		if (lfsr_schritt ()) {
-			digitalWrite (LED_BUILTIN, HIGH);
+                /* schritt ausfuehren und rueckgabe auswerten */
+                if (lfsr_schritt ()) {
+                        digitalWrite (LED_BUILTIN, HIGH);
                 }
                 else {
-		        digitalWrite (LED_BUILTIN, LOW);
-		}
-	}
+                        digitalWrite (LED_BUILTIN, LOW);
+                }
+        }
 }
