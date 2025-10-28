@@ -1,4 +1,5 @@
-/* 1. Beispielprogramm zu Variablen und Funktionen */
+
+/* Ein Beispielprogramm zu Variablen und Funktionen */
 
 /* diese Funktion sollte strenggenommen 'static' sein */
 void wir (void) {

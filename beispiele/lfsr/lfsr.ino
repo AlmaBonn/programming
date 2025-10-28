@@ -1,8 +1,12 @@
 
+/* Shift-XOR-Demo using a linear-feedback shift register */
+/* https://de.wikipedia.org/wiki/Linear_r%C3%BCckgekoppeltes_Schieberegister */
+
 /* Kontextvariablen fuer die Zeitmessung */
 static const unsigned int duration = 100;
 static unsigned int led_millis;
 
+/* diese Funktion sollte strenggenommen static sein */
 uint16_t
 lfsr_schritt (void) {
 

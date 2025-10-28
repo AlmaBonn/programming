@@ -1,4 +1,6 @@
 
+/* Blink the LED with a configurable 4-cycle */
+
 #define LED_PIN LED_BUILTIN
 
 /* globale statische Variablen sind nur in dieser Programmdatei sichtbar */
