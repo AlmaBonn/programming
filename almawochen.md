@@ -36,6 +36,9 @@ Bitte beachten Sie: diese Liste der Themen ist
  - Setzen, ändern und lesen von Bits
  - Präzedenz bitweise Operatoren
  - Demonstration LFSR
+
+## Woche 4
+
  - Definition der natürlichen Zahlen
  - Das Zweiersystem zur Zahlendarstellung
  - Negative Zahlen und Zweierkomplement
@@ -43,24 +46,24 @@ Bitte beachten Sie: diese Liste der Themen ist
  - Numerische Vergleichsoperatoren
  - Beispiele Arithmetik und Rekursion
  - Kontrollfluß für Schleifen
-
-## Woche 4
-
  - Überlauf von signed- und unsigned-Variablen
+
+## Woche 5
+
+ - Erweiterte Theorie Zweierkomplement
  - Richtlinien zur Auswahl von Ganzzahl-Typen
  - Promotionsregeln und Cast in C
  - Die Multiplikation über ganzen Zahlen
  - Algorithmische Division ganzer Zahlen
  - Alle logischen und arithmetischen Operatoren in C
- - Gleitkommazahlen und ihre Darstellung im Computer
-
-## Woche 5
-
- - Sortieralgorithmen und ihre Komplexität
 
 ## Woche 6
 
- - Erweiterte Theorie Zweierkomplement
+ - Sortieralgorithmen und ihre Komplexität
+
+## Woche 7
+
+ - Gleitkommazahlen und ihre Darstellung im Computer
  - Gleitkommatheorie: Genauigkeit, Rundungsfehler, Auslöschung
  - Strukturen in C
  - Pointer in C
