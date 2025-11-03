@@ -2,7 +2,10 @@
 /* Demo zu for-Schleifen in Standard-C
    ===================================
 
- * Dieses Programm enthaelt das erste der drei for-Beispiele.
+ * Dieses Programm variiert unser for-Schleifen-Beispiel so,
+ * dass es mit einem beliebigen C-Compiler uebersetzt werden kann.
+ * Alle Spezialisierungen auf die Arduino-Umgebung sind entfernt.
+ * Die Sprache C an sich ist unveraendert.
  *
  * Kommentare koennen alle Zeichen enthalten, insbesondere *.
    Oder sie enthalten auch mal keine Sternchen.
@@ -14,9 +17,10 @@
 
 /* Dieses Programm uebersetzen Sie mit dem gcc-Compiler wie folgt:
 
-     gcc -Wall -o ohnechip ohnechip.c
+     gcc -Wall -Wextra -o ohnechip ohnechip.c
 
-   und lassen es laufen mit
+   Hier aktivieren Sie eine grosse Menge an Warnungen.
+   Sie lassen es laufen mit
 
      ./ohnechip
  */
