@@ -39,7 +39,7 @@ run_forschleife (void) {
              i = i + 1 /* der dritte Ausdruck laeuft nach jeder Iteration,
                           danach geht es weiter mit dem zweiten */)
         { /* dies ist der Schleifenkoerper, den wir solange ausfuehren,
-             wie die zweite Bedingung im for-Konstrukt wahr ist */
+             wie der zweite Ausdruck im for-Konstrukt wahr ist */
 
                 /* wir geben eine feste Zeichenkette zum Serial Monitor */
                 Serial.print ("Anfang Schleifenkoerper mit Zaehler i = ");
