@@ -1,6 +1,10 @@
 
 # USB Beetle (clone of Arduino Leonardo)
 
+## Chip make
+
+The chip itself is an ATMega32U4.
+
 ## Board ID over USB
 
  - VID 0x16c0
