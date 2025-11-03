@@ -1,12 +1,15 @@
 
-/* Demo zu for-Schleifen.
- *
+/* Demo zu for-Schleifen
+   =====================
+
  * Die for-Schleife eignet sich besonders zum Hochzaehlen.
- * Dieses Programm enthaelt eine Vielfalt an Beispielen.
+ *
+ * Dieses Programm enthaelt drei Beispiele.
  * Am besten kopieren Sie es, loeschen, was Sie nicht interessiert,
  * und experimentieren mit dem Rest durch spielerische Modifikation.
  *
- * Kommentiere koennen alle Zeichen enthalten, insbesondere *.
+ * Kommentare koennen alle Zeichen enthalten, insbesondere *.
+   Oder sie enthalten auch mal keine Sternchen.
  *
  * Die Einrueckung durch Leerzeichen ist in C irrelevant.
  * Sie dient allein dem Menschen zur Uebersicht.
