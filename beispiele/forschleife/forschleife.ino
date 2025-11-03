@@ -32,11 +32,11 @@ run_forschleife (void) {
         Serial.println ("Erstes for-Beispiel");
         /*************************************/
 
-        for (i = 0; /* die erste der drei Anweisungen laeuft vor Beginn */
-             i < 7; /* die zweite wird vor jeder Iteration ausgewertet
+        for (i = 0; /* der erste der drei Ausdrücke laeuft vor Beginn */
+             i < 7; /* der zweite wird vor jeder Iteration ausgewertet
                        und beendet die Schleife, wenn sie false ist */
-             i = i + 1 /* die dritte Anweisung laeuft nach jeder Iteration,
-                          danach geht es weiter bei der zweiten Anweisung */)
+             i = i + 1 /* der dritte Ausdruck laeuft nach jeder Iteration,
+                          danach geht es weiter mit dem zweiten */)
         { /* dies ist der Schleifenkoerper, den wir solange ausfuehren,
              wie die zweite Bedingung im for-Konstrukt wahr ist */
 
@@ -79,7 +79,7 @@ run_forschleife (void) {
 
         /* Wir verwenden unsere eigene Kontroll-Logik */
         /* Hier verwenden wir zwei reservierte Woerter in C:
-           'continue' springt direkt zur dritten Anweisung im for-Konstrukt.
+           'continue' springt direkt zum dritten Ausdruck im for-Konstrukt.
                       Danach geht es wie sonst auch weiter mit der
                       Ueberpruefung der zweiten Bedingung.
            'break' beendet die Schleife sofort und springt hinter den Koerper.
@@ -90,11 +90,11 @@ run_forschleife (void) {
 
                 if (i < 9) {
                         i = i + 1; /* erhoehe um eins */
-                        continue; /* springt zur dritten Anweisung im for */
+                        continue; /* springt zum dritten Ausdruck im for */
                 }
                 if (i < 14) {
                         i = i + 3; /* erhoehe nun um drei */
-                        continue; /* springt zur dritten Anweisung im for */
+                        continue; /* springt zum dritten Ausdruck im for */
                 }
                 i = i + 4; /* andernfalls erhoehe um vier */
 
@@ -104,7 +104,7 @@ run_forschleife (void) {
                         /* Interessant: wir eliminieren so das finale Delay */
                 }
 
-                /* wie immer geht es von hier zur dritten Anweisung im for */
+                /* wie immer geht es von hier zum dritten Ausdruck im for */
         }
         Serial.print ("Nach der Schleife ist i = ");
         Serial.println (i);
