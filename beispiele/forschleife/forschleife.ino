@@ -59,7 +59,7 @@ run_forschleife (void) {
         Serial.println ("Zweites for-Beispiel");
         /**************************************/
 
-        /* Es ist erlaubt, Ausdrucke im for-Konstrukt wegzulassen */
+        /* Es ist erlaubt, Ausdrücke im for-Konstrukt wegzulassen */
         for (; i < 4; ) {
                 /* da noch i >= 4 ist, wird dieser Block nicht ausgefuhrt */
                 Serial.println ("Dies darf nicht erscheinen");
