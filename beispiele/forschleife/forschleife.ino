@@ -7,6 +7,10 @@
  * und experimentieren mit dem Rest durch spielerische Modifikation.
  *
  * Kommentiere koennen alle Zeichen enthalten, insbesondere *.
+ *
+ * Die Einrueckung durch Leerzeichen ist in C irrelevant.
+ * Sie dient allein dem Menschen zur Uebersicht.
+ * Es gibt eine Vielfalt an Konventionen.
  */
 
 /* diese Funktion sollte strenggenommen static sein */
@@ -52,7 +56,7 @@ run_forschleife (void) {
         /**************************************/
 
         /* Es ist erlaubt, Ausdrucke im for-Konstrukt wegzulassen */
-	for (; i < 4; ) {
+        for (; i < 4; ) {
                 /* da noch i >= 4 ist, wird dieser Block nicht ausgefuhrt */
                 Serial.println ("Dies darf nicht erscheinen");
         }
@@ -111,7 +115,7 @@ setup (void)
 
         /* initialisieren und warten auf den Serial Monitor */
         Serial.begin (9600);
-	while (!Serial);
+        while (!Serial);
 
         /* rufe unser eigentliches Programm auf */
         run_forschleife ();
