@@ -39,16 +39,22 @@ Bitte beachten Sie: diese Liste der Themen ist
 
 ## Woche 4
 
- - Definition der natürlichen Zahlen
+ - Axiomatik der natürlichen Zahlen
+ - Die Inkrementfunktion auf Bitstrings
+ - Eigenschaften der Inkrementfunktion
+ - Äquivalenzrelation über Bitstrings
+ - Isomorphie zu den natürlichen Zahlen
+
  - Das Zweiersystem zur Zahlendarstellung
- - Negative Zahlen und Zweierkomplement
  - Addition und Subtraktion von C-Ganzzahlen
+ - Negative Zahlen und Zweierkomplement
  - Numerische Vergleichsoperatoren
- - Beispiele Arithmetik und Rekursion
- - Kontrollfluß für Schleifen
- - Überlauf von signed- und unsigned-Variablen
+ - Demo Kontrollfluß für Schleifen
+ - Demo Arithmetik
 
 ## Woche 5
+
+ - Überlauf von signed- und unsigned-Variablen
 
  - Erweiterte Theorie Zweierkomplement
  - Richtlinien zur Auswahl von Ganzzahl-Typen
