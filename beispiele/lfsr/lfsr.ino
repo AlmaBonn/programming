@@ -36,14 +36,16 @@ lfsr_schritt (void) {
 void
 setup (void)
 {
+        /* eingebaute LED aktivieren und anschalten */
+        pinMode (LED_BUILTIN, OUTPUT);
+        digitalWrite (LED_BUILTIN, HIGH);
+
         /* initialisieren der Konsolenausgabe */
         Serial.begin (9600);
 
-        /* warte ein wenig, aber blockiere nicht ohne IDE */
+        /* warte ein wenig und aus, aber blockiere nicht ohne IDE */
         delay (500);
-
-        /* eingebaute LED aktivieren */
-        pinMode (LED_BUILTIN, OUTPUT);
+        digitalWrite (LED_BUILTIN, LOW);
 
         /* aktuelle Systemzeit in ms modulo 1000 */
         led_millis = millis ();
