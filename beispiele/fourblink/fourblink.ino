@@ -43,7 +43,7 @@ loop (void)
                 }
                 if  (++step == numsteps) {
                         step = 0;
-                        Serial.write ("Another sequence done.\n");
+                        Serial.println ("Another sequence done.");
                 }
         }
 }
