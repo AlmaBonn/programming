@@ -34,7 +34,8 @@ run_forschleife (void) {
 
         for (i = 0; /* der erste der drei Ausdrücke laeuft vor Beginn */
              i < 7; /* der zweite wird vor jeder Iteration ausgewertet
-                       und beendet die Schleife, wenn sie false ist */
+                       und beendet die Schleife, wenn er false ist, das
+                       bedeutet, hinter ihren Körper zu springen. */
              i = i + 1 /* der dritte Ausdruck laeuft nach jeder Iteration,
                           danach geht es weiter mit dem zweiten */)
         { /* dies ist der Schleifenkoerper, den wir solange ausfuehren,
