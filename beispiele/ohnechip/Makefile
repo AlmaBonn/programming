@@ -2,21 +2,26 @@
 # Kommentare beginnen mit #, dieses Zeichen
 # muß neu in jeder Kommentarzeile stehen.
 
-# In make kann man nach Belieben Variablen definieren.
+# Im Makefile kann man nach Belieben Variablen definieren.
+# Eine Variablendefinition bewirkt für sich noch nichts.
 ZIELE = ohnechip
 
 # Wenn wir mehrere Ziele hätten, könnte das so aussehen:
 # ZIELE = ohnechip nocheins undeindrittes
 
-# Hier die erste Definition einer Abhängikeit über den Doppelpunkt.
-# Die Reihenfolge ist Ziel: Quelle(n).  Hier ist es nur eine Quelle.
-# Beim Aufruf von `make` ohne Argumente wird das oberste Ziel des
-# Makefiles erzeugt.  Alle Abhängigkeiten werden rekursiv erzeugt.
+# Hier die erste Definition einer Abhängigkeit über den Doppelpunkt.
+# Die Syntax ist Ziel: Quelle(n), letztere getrennt durch Leerzeichen.
+#
+# Beim Aufruf von `make` ohne Argumente wird das erste Ziel im
+# Makefile erzeugt.  Alle Abhängigkeiten werden rekursiv erzeugt.
+# In unserem Fall bewirken `make` und `make ziel` das gleiche.
+#
+# Der Inhalt der Variablen ZIELE wird hier als Quelle(n) eingesetzt.
 # Das Ziel `ziel` ist real keine Datei, das Ziel `ohnechip` schon.
 # Beides ist erlaubt, für nicht-Datei-Ziele siehe unten zu .PHONY.
-ziel: ohnechip
+ziel: $(ZIELE)
 
-# Eine weitere Definition einer Abhängikeit über den Doppelpunkt.
+# Eine weitere Definition einer Abhängigkeit über den Doppelpunkt.
 # Die Reihenfolge ist wieder Ziel: Quelle(n).
 # Dieses Ziel ist unsere ausführbare Datei.
 ohnechip: ohnechip.c
