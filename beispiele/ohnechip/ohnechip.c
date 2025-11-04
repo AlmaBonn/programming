@@ -19,8 +19,10 @@
 
      gcc -Wall -Wextra -o ohnechip ohnechip.c
 
-   Hier aktivieren Sie eine grosse Menge an Warnungen.
-   Sie lassen es laufen mit
+   Wahlweise können Sie das beigefügte `Makefile` ausnutzen, indem Sie
+   auf der Kommandozeile `make` eintippen, siehe unsere Wikiseite dazu.
+   Durch die `-W`-Optionen aktivieren Sie eine grosse Menge an Warnungen.
+   Sie lassen das erzeugte Programm laufen mit
 
      ./ohnechip
  */
