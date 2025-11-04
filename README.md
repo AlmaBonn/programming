@@ -10,8 +10,8 @@ The example programs are meant to be used from the Arduino IDE.
 Nonetheless, it is not difficult to run them without the IDE
 by compiling them yourself, providing your own main function,
 removing any LED control and exchanging 'Serial' with your own output.
-We have added one such example in the
-[folder beispiele/ohnechip](beispiele/ohnechip).
+We have added one such example in the folder
+[beispiele/ohnechip](beispiele/ohnechip).
 
 We also provide a [rationale for choosing hardware](elementar.md).
 
