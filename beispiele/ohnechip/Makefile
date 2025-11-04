@@ -1,20 +1,44 @@
 
-# Kommentare beginnen mit #, dieses
-# Zeichen muß neu in jeder Zeile stehen
+# Kommentare beginnen mit #, dieses Zeichen
+# muß neu in jeder Kommentarzeile stehen.
 
-# Variablen können beliebig definiert werden
-ZIEL = ohnechip
+# In make kann man nach Belieben Variablen definieren.
+ZIELE = ohnechip
 
-# Eine Definition einer Abhängikeit über den Doppelpunkt.
-# Die Reihenfolge ist Ziel: Quelle(n).
+# Wenn wir mehrere Ziele hätten, könnte das so aussehen:
+# ZIELE = ohnechip nocheins undeindrittes
+
+# Hier die erste Definition einer Abhängikeit über den Doppelpunkt.
+# Die Reihenfolge ist Ziel: Quelle(n).  Hier ist es nur eine Quelle.
+# Beim Aufruf von `make` ohne Argumente wird das oberste Ziel des
+# Makefiles erzeugt.  Alle Abhängigkeiten werden rekursiv erzeugt.
+# Das Ziel `ziel` ist real keine Datei, das Ziel `ohnechip` schon.
+# Beides ist erlaubt, für nicht-Datei-Ziele siehe unten zu .PHONY.
+ziel: ohnechip
+
+# Eine weitere Definition einer Abhängikeit über den Doppelpunkt.
+# Die Reihenfolge ist wieder Ziel: Quelle(n).
+# Dieses Ziel ist unsere ausführbare Datei.
 ohnechip: ohnechip.c
-# Die Zeile(n) direkt darunter enthalten alle Aufrufe
-# zum Erzeugen des Ziels aus den Quellen.
-# Diese *müssen* mit einem TAB-Zeichen beginnen!
+# Die Zeile(n) direkt unter der Abhängigkeit gehören dazu und enthalten
+# alle benoetigten Aufrufe zum Erzeugen des Ziels aus seinen Quellen.
+# Diese Aufruf-Zeilen *müssen* mit einem TAB-Zeichen beginnen!
 # Manche Editoren wandeln TABs in Leerzeichen um, das gilt es zu verhindern.
 	gcc -Wall -Wextra $^ -o $@
 
-# Wir haben in der obigen Regel zwei Variablen eingesetzt:
+# Wir haben in der obigen Regel zwei der internen Variablen abgerufen:
 # $@ setzt das Ziel ein.  Das Symbol ähnelt optisch einer Zielscheibe!
-# $^ setzt die erste Quelle ein.  Das Symbol zeigt sozusagen darauf.
-# $< setzt alle Quellen ein.  Eselsbrücke ist die allgemeine Eingabe.
+# $< setzt die erste Quelle ein.  Das Symbol zeigt sozusagen darauf.
+# $^ setzt alle Quellen ein.  Eselsbrücke ist "alles von dort oben."
+
+# .PHONY ist ein spezielles vordefiniertes Ziel von make.
+# Hier sollte man alle Ziele auflisten, die *kein* Dateiname sind.
+# Ansonsten würde make versuchen, die Dateien `ziel` oder `clean`
+# zu konstruieren.  Durch diese Regel wird das verhindert.
+.PHONY: ziel clean
+
+# Wir fügen noch ein nicht-Datei Ziel hinzu zum weiteren Automatisieren.
+# In diesem Fall hat das Ziel keine Abhängigkeit, sondern ruft `rm` auf.
+# Wenn man `make clean` aufruft, löscht das die erzeugten Zieldateien.
+clean:
+	rm -f $(ZIELE)
