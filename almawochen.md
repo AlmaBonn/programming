@@ -44,20 +44,21 @@ Bitte beachten Sie: diese Liste der Themen ist
  - Eigenschaften der Inkrementfunktion
  - Äquivalenzrelation über Bitstrings
  - Isomorphie zu den natürlichen Zahlen
-
  - Das Zweiersystem zur Zahlendarstellung
- - Addition und Subtraktion von C-Ganzzahlen
+ - Programmieren mit natürlichen Zahlen
+ - Demo zu Funktionen
+
+## Woche 5
+
  - Negative Zahlen und Zweierkomplement
+ - Addition und Subtraktion von C-Ganzzahlen
+ - Überlauf von signed- und unsigned-Variablen
+ - Richtlinien zur Auswahl von Ganzzahl-Typen
+
  - Numerische Vergleichsoperatoren
  - Demo Kontrollfluß für Schleifen
  - Demo Arithmetik
 
-## Woche 5
-
- - Überlauf von signed- und unsigned-Variablen
-
- - Erweiterte Theorie Zweierkomplement
- - Richtlinien zur Auswahl von Ganzzahl-Typen
  - Promotionsregeln und Cast in C
  - Die Multiplikation über ganzen Zahlen
  - Algorithmische Division ganzer Zahlen
