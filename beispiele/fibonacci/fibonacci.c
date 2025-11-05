@@ -38,13 +38,13 @@ fibonacci (int i) {
                 return 1;
         }
 
-        /* Wer kommen hier nur an, wenn bisher kein return aufgerufen wurde */
+        /* wir kommen hier nur an, wenn bisher kein return aufgerufen wurde */
 
-        /* Rufe Rekursion auf und zaehle dabei unseren eigenen Aufruf mit */
+        /* zaehle unseren eigenen Aufruf und gehe dann in die Rekursion */
         ++rtiefe;
         fibo = fibonacci (i - 1) + fibonacci (i - 2);
 
-        /* und geben das Ergebnis zurück und neutralisieren die Tiefe */
+        /* gebe das Ergebnis zurück und neutralisiere unseren Aufruf */
         --rtiefe;
         return fibo;
 }
