@@ -42,6 +42,9 @@ fibonacci (int i) {
 
         /* zaehle unseren eigenen Aufruf und gehe dann in die Rekursion */
         ++rtiefe;
+        /* auch andere Rekursionsvorschriften sollten immer zwischen ++rtiefe
+         * und --rtiefe implementiert werden
+         */
         fibo = fibonacci (i - 1) + fibonacci (i - 2);
 
         /* gebe das Ergebnis zurück und neutralisiere unseren Aufruf */
