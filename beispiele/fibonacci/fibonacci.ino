@@ -52,7 +52,11 @@ fibonacci (int i) {
 void
 setup (void)
 {
+        int i;
         uint32_t fibo;
+
+        /* warte drei Sekunden */
+        delay (3000);
 
         /* initialisieren der Konsolenausgabe */
         Serial.begin (9600);
