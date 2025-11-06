@@ -55,7 +55,7 @@ setup (void)
         int i;
         uint32_t fibo;
 
-        /* warte drei Sekunden */
+        /* warte drei Sekunden (hier testweise) */
         delay (3000);
 
         /* initialisieren der Konsolenausgabe */
