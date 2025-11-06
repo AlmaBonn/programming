@@ -45,11 +45,12 @@ Bitte beachten Sie: diese Liste der Themen ist
  - Äquivalenzrelation über Bitstrings
  - Isomorphie zu den natürlichen Zahlen
  - Das Zweiersystem zur Zahlendarstellung
- - Programmieren mit natürlichen Zahlen
- - Demo zu Funktionen
+ - Demo zu unendlichen Schleifen und Rekursion
+ - Demo/Beispiel zur Algorithmenentwicklung
 
 ## Woche 5
 
+ - Natürliche Zahlen fester Bit-Breite
  - Negative Zahlen und Zweierkomplement
  - Addition und Subtraktion von C-Ganzzahlen
  - Überlauf von signed- und unsigned-Variablen
