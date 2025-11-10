@@ -50,17 +50,21 @@ Bitte beachten Sie: diese Liste der Themen ist
 
 ## Woche 5
 
+ - Numerische Vergleichsoperatoren
+ - Summation als schriftliche Addition
  - Natürliche Zahlen fester Bit-Breite
+ - Das Hornerschema zur Polynom-Auswertung
+ - unsigned-Datentypen modulo 2 hoch n
+ - Demo Array-Initialisierung und -Indizes
+
  - Negative Zahlen und Zweierkomplement
  - Addition und Subtraktion von C-Ganzzahlen
  - Überlauf von signed- und unsigned-Variablen
  - Richtlinien zur Auswahl von Ganzzahl-Typen
+ - Promotionsregeln und Cast in C
 
- - Numerische Vergleichsoperatoren
  - Demo Kontrollfluß für Schleifen
  - Demo Arithmetik
-
- - Promotionsregeln und Cast in C
  - Die Multiplikation über ganzen Zahlen
  - Algorithmische Division ganzer Zahlen
  - Alle logischen und arithmetischen Operatoren in C
