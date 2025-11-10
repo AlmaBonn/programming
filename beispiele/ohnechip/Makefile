@@ -4,7 +4,7 @@
 
 # Im Makefile kann man nach Belieben Variablen definieren.
 # Eine Variablendefinition bewirkt für sich noch nichts.
-ZIELE = justsome ohnechip
+ZIELE = justsome ohnechip fuenfplus
 
 # Hier die erste Definition einer Abhängigkeit über den Doppelpunkt.
 # Die Syntax ist Ziel: Quelle(n), letztere getrennt durch Leerzeichen.
@@ -28,8 +28,10 @@ ohnechip: ohnechip.c
 # Manche Editoren wandeln TABs in Leerzeichen um, das gilt es zu verhindern.
 	gcc -Wall -Wextra $^ -o $@
 
-# Eine weitere Abhaengigkeit dieser Art.
+# Weitere Abhaengigkeiten dieser Art.
 justsome: justsome.c
+	gcc -Wall -Wextra $^ -o $@
+fuenfplus: fuenfplus.c
 	gcc -Wall -Wextra $^ -o $@
 
 # Wir haben in der obigen Regel zwei der internen Variablen abgerufen:
