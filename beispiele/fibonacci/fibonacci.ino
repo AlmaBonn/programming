@@ -58,7 +58,8 @@ setup (void)
         int i;
         uint32_t fibo;
 
-        /* warte drei Sekunden (hier testweise) */
+        /* warte drei Sekunden zur Sicherheit, siehe
+           https://github.com/AlmaBonn/programming/wiki/Wichtige-Hinweise-zum-Mikrochip#delay */
         delay (3000);
 
         /* initialisieren der Konsolenausgabe */

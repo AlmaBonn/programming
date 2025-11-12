@@ -9,6 +9,10 @@ static unsigned int led_millis;
 void
 setup (void)
 {
+        /* warte drei Sekunden zur Sicherheit, siehe
+           https://github.com/AlmaBonn/programming/wiki/Wichtige-Hinweise-zum-Mikrochip#delay */
+        delay (3000);
+
         /* Konsolenoutput aufsetzen */
         Serial.begin (9600);
 

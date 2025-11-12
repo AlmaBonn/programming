@@ -45,6 +45,10 @@ void wir (void) {
 }
 
 void setup (void) {
+  /* warte drei Sekunden zur Sicherheit, siehe
+     https://github.com/AlmaBonn/programming/wiki/Wichtige-Hinweise-zum-Mikrochip#delay */
+  delay (3000);
+
   /* put your code here to run once: */
 
   /* dies ist ein Funktionsaufruf ohne Argumente */

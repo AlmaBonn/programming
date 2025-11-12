@@ -36,6 +36,10 @@ lfsr_schritt (void) {
 void
 setup (void)
 {
+        /* warte drei Sekunden zur Sicherheit, siehe
+           https://github.com/AlmaBonn/programming/wiki/Wichtige-Hinweise-zum-Mikrochip#delay */
+        delay (3000);
+
         /* eingebaute LED aktivieren und anschalten */
         pinMode (LED_BUILTIN, OUTPUT);
         digitalWrite (LED_BUILTIN, HIGH);

@@ -126,6 +126,10 @@ void run (void) {
 
 /* Der Code in der setup-Funktion wird genau einmal ausgeführt. */
 void setup () {
+  /* warte drei Sekunden zur Sicherheit, siehe
+     https://github.com/AlmaBonn/programming/wiki/Wichtige-Hinweise-zum-Mikrochip#delay */
+  delay (3000);
+
   /* Initialisiere Konsole mit der Datenrate von 9600 Bits pro Sekunde. */
   Serial.begin (9600);
   /* Wir warten bis die USB-Verbindung besteht. */
