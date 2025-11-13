@@ -56,27 +56,27 @@ Bitte beachten Sie: diese Liste der Themen ist
  - Das Hornerschema zur Polynom-Auswertung
  - unsigned-Datentypen modulo 2 hoch n
  - Demo Array-Initialisierung und -Indizes
-
  - Negative Zahlen und Zweierkomplement
  - Addition und Subtraktion von C-Ganzzahlen
  - Überlauf von signed- und unsigned-Variablen
- - Richtlinien zur Auswahl von Ganzzahl-Typen
- - Promotionsregeln und Cast in C
-
- - Demo Kontrollfluß für Schleifen
- - Demo Arithmetik
- - Die Multiplikation über ganzen Zahlen
- - Algorithmische Division ganzer Zahlen
- - Alle logischen und arithmetischen Operatoren in C
 
 ## Woche 6
 
+ - Richtlinien zur Auswahl von Ganzzahl-Typen
+ - Demo Arithmetik und Überlauf
+ - Demo Kontrollfluß für Schleifen
  - Sortieralgorithmen und ihre Komplexität
+ - Bubblesort und seine Laufzeit
+ - Mergesort und seine Laufzeit
 
 ## Woche 7
 
+ - Der Quicksort-Algorithmus
+
+ - Promotionsregeln und Cast in C
  - Gleitkommazahlen und ihre Darstellung im Computer
  - Gleitkommatheorie: Genauigkeit, Rundungsfehler, Auslöschung
+ - Alle logischen und arithmetischen Operatoren in C
  - Strukturen in C
  - Pointer in C
  - Dynamischer Speicher in C
