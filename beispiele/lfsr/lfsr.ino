@@ -7,8 +7,7 @@ static const unsigned int duration = 100;
 static unsigned int led_millis;
 
 /* diese Funktion sollte strenggenommen static sein */
-uint16_t
-lfsr_schritt (void) {
+uint16_t lfsr_schritt (void) {
 
         /* static Wert bleibt über mehrere Aufrufe erhalten */
         static uint16_t wort = 1;
@@ -33,9 +32,7 @@ lfsr_schritt (void) {
         return msb;
 }
 
-void
-setup (void)
-{
+void setup (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
         /* warte drei Sekunden zur Sicherheit, siehe
            https://github.com/AlmaBonn/programming/wiki/Wichtige-Hinweise-zum-Mikrochip#delay */
         delay (3000);
@@ -55,9 +52,7 @@ setup (void)
         led_millis = millis ();
 }
 
-void
-loop (void)
-{
+void loop (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
         /* wieviel Zeit ist vergangen seit dem letzten loop */
         const unsigned int led_diff = millis () - led_millis;
         if (led_diff >= duration) {

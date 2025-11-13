@@ -44,7 +44,7 @@ void wir (void) {
   Serial.write (zeile);
 }
 
-void setup (void) {
+void setup (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
   /* warte drei Sekunden zur Sicherheit, siehe
      https://github.com/AlmaBonn/programming/wiki/Wichtige-Hinweise-zum-Mikrochip#delay */
   delay (3000);
@@ -55,6 +55,6 @@ void setup (void) {
   wir ();
 }
 
-void loop (void) {
+void loop (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
   /* we ignore the content of this function for our class */
 }

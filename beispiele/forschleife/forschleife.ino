@@ -17,8 +17,7 @@
  */
 
 /* diese Funktion sollte strenggenommen static sein */
-void
-run_forschleife (void) {
+void run_forschleife (void) {
 
         /* Zaehlvariablen ohne besondere Anforderungen
            nennt man gerne i, j, k, l, das ist aber nicht vorgegeben */
@@ -111,9 +110,8 @@ run_forschleife (void) {
         Serial.println (i);
 }
 
-void
-setup (void)
-{
+void setup (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
+
         /* warte drei Sekunden zur Sicherheit, siehe
            https://github.com/AlmaBonn/programming/wiki/Wichtige-Hinweise-zum-Mikrochip#delay */
         delay (3000);
@@ -132,8 +130,6 @@ setup (void)
         digitalWrite (LED_BUILTIN, HIGH);
 }
 
-void
-loop (void)
-{
+void loop (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
         /* in dieser Funktion machen wir gar nichts */
 }

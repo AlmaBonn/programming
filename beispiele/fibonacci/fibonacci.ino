@@ -52,9 +52,7 @@ fibonacci (int i) {
         return fibo;
 }
 
-void
-setup (void)
-{
+void setup (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
         int i;
         uint32_t fibo;
 
@@ -89,8 +87,6 @@ setup (void)
         }
 }
 
-void
-loop (void)
-{
+void loop (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
         /* mache hier nichts */
 }

@@ -6,9 +6,7 @@
 /* globale statische Variablen sind nur in dieser Programmdatei sichtbar */
 static unsigned int led_millis;
 
-void
-setup (void)
-{
+void setup (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
         /* warte drei Sekunden zur Sicherheit, siehe
            https://github.com/AlmaBonn/programming/wiki/Wichtige-Hinweise-zum-Mikrochip#delay */
         delay (3000);
@@ -24,9 +22,7 @@ setup (void)
         led_millis = millis ();
 }
 
-void
-loop (void)
-{
+void loop (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
         /* lokale statische Variablen behalten ihren Wert über mehrere Aufrufe */
         static unsigned char step;
         static const unsigned char numsteps = 4;
