@@ -3,8 +3,7 @@
 
 #define LED_PIN LED_BUILTIN
 
-/* globale statische Variablen sind nur in dieser Programmdatei sichtbar */
-static unsigned int led_millis;
+unsigned int led_millis;
 
 void setup (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
         /* warte drei Sekunden zur Sicherheit, siehe

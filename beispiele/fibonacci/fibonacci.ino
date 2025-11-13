@@ -5,17 +5,16 @@
    da wir verschiedene praktische Sicherheitsüberprüfungen hinzufügen */
 
 /* Kontextvariable fuer die momentane Rekursionstiefe */
-static int rtiefe;
+int rtiefe;
 
 /* Wir halten für eine Berechnung fest, ob die Maximaltiefe erreicht wurde */
-static int reicht;
+int reicht;
 
 /* Wir brechen die Berechnung ab, wenn wir die Maximaltiefe erreichen */
-static const int rtimax = 100;
+const int rtimax = 100;
 
 /* Ein 32-Bit-Wort erlaubt Zahlen bis über 4 Milliarden */
-uint32_t
-fibonacci (int i) {
+uint32_t fibonacci (int i) {
 
         /* Zwischenergebnis */
         uint32_t fibo;

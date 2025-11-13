@@ -5,8 +5,7 @@
    das heißt z_0 wird hier auf 4 und nicht auf 0 gesetzt. Das entspricht also
    nicht der zum Beispiel vom Dezimalsystem gewohnten Darstellung (z_{L-1},...,z_0)_b */
 int input[L] = {4, 4, 4, 3, 0, 2, 1, 1, 3, 0};
-/* Output enthält für den Fall von Übertrag einen Wert mehr.
-   Die Initialisierung ist strenggenommen nicht noetig. */
+/* Output enthält für den Fall von Übertrag einen Wert mehr. */
 int output[L+1] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
 int input_laenge (void) {

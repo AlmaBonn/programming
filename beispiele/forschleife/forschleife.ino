@@ -16,7 +16,6 @@
  * Es gibt eine Vielfalt an Konventionen.
  */
 
-/* diese Funktion sollte strenggenommen static sein */
 void run_forschleife (void) {
 
         /* Zaehlvariablen ohne besondere Anforderungen
