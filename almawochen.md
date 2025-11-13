@@ -68,6 +68,7 @@ Bitte beachten Sie: diese Liste der Themen ist
  - Sortieralgorithmen und ihre Komplexität
  - Bubblesort und seine Laufzeit
  - Mergesort und seine Laufzeit
+ - Demo Array-Argumente
 
 ## Woche 7
 
