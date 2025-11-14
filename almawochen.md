@@ -63,6 +63,8 @@ Bitte beachten Sie: diese Liste der Themen ist
 ## Woche 6
 
  - Richtlinien zur Auswahl von Ganzzahl-Typen
+ - Ganzzahlige Potenzen berechnen
+ - Linear congruential generator
  - Demo Arithmetik und Überlauf
  - Demo Kontrollfluß für Schleifen
  - Sortieralgorithmen und ihre Komplexität
