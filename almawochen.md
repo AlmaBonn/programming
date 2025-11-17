@@ -66,20 +66,30 @@ Bitte beachten Sie: diese Liste der Themen ist
  - Ganzzahlige Potenzen berechnen
  - Linear congruential generator
  - Demo Arithmetik und Überlauf
- - Demo Kontrollfluß für Schleifen
  - Sortieralgorithmen und ihre Komplexität
- - Bubblesort und seine Laufzeit
- - Mergesort und seine Laufzeit
- - Demo Array-Argumente
+ - Der Bubblesort-Algorithmus
+ - Der Mergesort-Algorithmus
+ - Erklärung long-Typen und Zeitmessung
+ - Demo Array-Argumente und break
 
 ## Woche 7
 
+ - Landau-Notation
+ - Theorie der Laufzeiten
  - Der Quicksort-Algorithmus
-
+ - Demo Kontrollfluß für Schleifen
  - Promotionsregeln und Cast in C
+ - Motivation Graphentheorie
+
+## Woche 11
+
  - Gleitkommazahlen und ihre Darstellung im Computer
  - Gleitkommatheorie: Genauigkeit, Rundungsfehler, Auslöschung
- - Alle logischen und arithmetischen Operatoren in C
+
+## Woche 15
+
+ - Ternärer und Komma-Operator
+ - Komplette Präzedenztabelle der C-Operatoren
  - Strukturen in C
  - Pointer in C
  - Dynamischer Speicher in C
