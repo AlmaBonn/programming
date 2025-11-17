@@ -6,12 +6,13 @@
 const unsigned int duration = 100;
 unsigned int led_millis;
 
+/* Fuehre einen LFSR-Schritt aus und gebe das hoechste Bit zurueck */
 uint16_t lfsr_schritt (void) {
 
-        /* static Wert bleibt über mehrere Aufrufe erhalten */
+        /* static-Wert bleibt über mehrere Aufrufe erhalten */
         static uint16_t wort = 1;
 
-        /* lokale Variablen in jedem Aufruf neu erstellt */
+        /* lokale Variablen werden in jedem Aufruf neu erstellt */
         uint16_t msb, zwi;
 
         /* gebe MSB aus */
@@ -27,15 +28,13 @@ uint16_t lfsr_schritt (void) {
         /* schiebe nach links und update LSB */
         wort = (wort << 1) | zwi;
 
-        /* rueckgabewert */
+        /* Rueckgabewert */
         return msb;
 }
 
-void setup (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
-        /* warte drei Sekunden zur Sicherheit, siehe
-           https://github.com/AlmaBonn/programming/wiki/Wichtige-Hinweise-zum-Mikrochip#delay */
-        delay (3000);
-
+void setup ( /* hier könnte void stehen, die Arduino IDE gibt das aber
+                bei der setup-Funktion standardmaessig nicht vor */)
+{
         /* eingebaute LED aktivieren und anschalten */
         pinMode (LED_BUILTIN, OUTPUT);
         digitalWrite (LED_BUILTIN, HIGH);
@@ -43,7 +42,7 @@ void setup (/* hier könnte void stehen, die Arduino IDE macht das aber standard
         /* initialisieren der Konsolenausgabe */
         Serial.begin (9600);
 
-        /* warte ein wenig und aus, aber blockiere nicht ohne IDE */
+        /* warte ein wenig und schalte die LED wieder aus */
         delay (500);
         digitalWrite (LED_BUILTIN, LOW);
 
@@ -51,7 +50,9 @@ void setup (/* hier könnte void stehen, die Arduino IDE macht das aber standard
         led_millis = millis ();
 }
 
-void loop (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
+void loop ( /* hier könnte void stehen, die Arduino IDE gibt das aber
+               bei der loop-Funktion standardmäßig nicht vor */ )
+{
         /* wieviel Zeit ist vergangen seit dem letzten loop */
         const unsigned int led_diff = millis () - led_millis;
         if (led_diff >= duration) {

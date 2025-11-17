@@ -20,9 +20,6 @@ void setup ( /* hier könnte void stehen, die Arduino IDE gibt das aber
         /* Konsolenoutput aufsetzen */
         Serial.begin (9600);
 
-        /* Wir warten noch ein wenig, laufen aber auch ohne den Monitor */
-        delay (500);
-
 /* das Gegenstück zum obigen #if 0 */
 #endif
 
