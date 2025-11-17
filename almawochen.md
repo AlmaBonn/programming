@@ -62,6 +62,7 @@ Bitte beachten Sie: diese Liste der Themen ist
 
 ## Woche 6
 
+ - Nochmal Algorithmus zum Zahlenschloss
  - Richtlinien zur Auswahl von Ganzzahl-Typen
  - Ganzzahlige Potenzen berechnen
  - Linear congruential generator
