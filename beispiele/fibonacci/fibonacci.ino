@@ -7,7 +7,7 @@
 /* Kontextvariable fuer die momentane Rekursionstiefe */
 int rtiefe;
 
-/* Wir halten für eine Berechnung fest, ob die Maximaltiefe erreicht wurde */
+/* Wir halten für eine Berechnung fest, ob die Maximaltiefe erreicht ist */
 int reicht;
 
 /* Wir brechen die Berechnung ab, wenn wir die Maximaltiefe erreichen */
@@ -22,7 +22,8 @@ uint32_t fibonacci (int i) {
         /* pruefe korrekten Funktionsaufruf zur Sicherheit */
         if (i < 0) {
                 Serial.println ("Negativer Index ist nicht erlaubt");
-                return 0; /* kehrt sofort mit Wert 0 aus der Funktion zurück */
+                /* kehrt sofort mit Wert 0 aus der Funktion zurück */
+                return 0;
         }
 
         /* begrenze die Rekursionstiefe */
@@ -37,13 +38,13 @@ uint32_t fibonacci (int i) {
                 return 1;
         }
 
-        /* wir kommen hier nur an, wenn bisher kein return aufgerufen wurde */
+        /* wir kommen hier nur an, wenn bisher kein return aufgerufen
+           wurde */
 
         /* zaehle unseren eigenen Aufruf und gehe dann in die Rekursion */
         ++rtiefe;
-        /* auch andere Rekursionsvorschriften sollten immer zwischen ++rtiefe
-         * und --rtiefe implementiert werden
-         */
+        /* auch andere Rekursionsvorschriften sollten immer zwischen
+           ++rtiefe und --rtiefe implementiert werden */
         fibo = fibonacci (i - 1) + fibonacci (i - 2);
 
         /* gebe das Ergebnis zurück und neutralisiere unseren Aufruf */
@@ -51,12 +52,14 @@ uint32_t fibonacci (int i) {
         return fibo;
 }
 
-void setup (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
+void setup (/* hier könnte void stehen, die Arduino IDE gibt das aber
+               bei der setup-Funktion standardmäßig nicht vor */) {
         int i;
         uint32_t fibo;
 
         /* warte drei Sekunden zur Sicherheit, siehe
-           https://github.com/AlmaBonn/programming/wiki/Wichtige-Hinweise-zum-Mikrochip#delay */
+           https://github.com/AlmaBonn/programming/wiki/
+             Wichtige-Hinweise-zum-Mikrochip#delay */
         delay (3000);
 
         /* initialisieren der Konsolenausgabe */
@@ -67,10 +70,11 @@ void setup (/* hier könnte void stehen, die Arduino IDE macht das aber standard
         reicht = 0;
         for (i = 0; !reicht; ++i) {
 
-                /* die Tiefe initialisieren wir für jede Fibonacci-Zahl neu */
+                /* rtiefe initialisieren wir für jede Fibonacci-Zahl neu */
                 rtiefe = 0;
                 fibo = fibonacci (i);
-                /* wenn wir korrekt programmiert haben, ist rtiefe wieder 0 */
+                /* wenn wir korrekt programmiert haben, ist rtiefe
+                   wieder 0 */
 
                 Serial.print ("Fibonacci-Zahl ");
                 Serial.print (i);
@@ -86,6 +90,7 @@ void setup (/* hier könnte void stehen, die Arduino IDE macht das aber standard
         }
 }
 
-void loop (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
+void loop (/* hier könnte void stehen, die Arduino IDE gibt das aber
+              bei der loop-Funktion standardmäßig nicht vor */) {
         /* mache hier nichts */
 }

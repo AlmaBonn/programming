@@ -99,20 +99,25 @@ void run_forschleife (void) {
 
                 /* eine Abbruchbedingung brauchen wir noch */
                 if (i >= 29) {
-                        break; /* springt sofort hinter den Schleifenkoerper */
-                        /* Interessant: wir eliminieren so das finale Delay */
+                        /* springt sofort hinter den Schleifenkoerper */
+                        break;
+                        /* Interessant: wir eliminieren so das finale
+                           Delay */
                 }
 
-                /* wie immer geht es von hier zum dritten Ausdruck im for */
+                /* wie immer geht es von hier zum dritten Ausdruck im
+                   for */
         }
         Serial.print ("Nach der Schleife ist i = ");
         Serial.println (i);
 }
 
-void setup (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
+void setup (/* hier könnte void stehen, die Arduino IDE gibt das aber
+               bei der setup-Funktion standardmäßig nicht vor */) {
 
         /* warte drei Sekunden zur Sicherheit, siehe
-           https://github.com/AlmaBonn/programming/wiki/Wichtige-Hinweise-zum-Mikrochip#delay */
+           https://github.com/AlmaBonn/programming/wiki/
+             Wichtige-Hinweise-zum-Mikrochip#delay */
         delay (3000);
 
         /* eingebaute LED aktivieren, sie ist zunaechst aus */
@@ -129,6 +134,7 @@ void setup (/* hier könnte void stehen, die Arduino IDE macht das aber standard
         digitalWrite (LED_BUILTIN, HIGH);
 }
 
-void loop (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
+void loop (/* hier könnte void stehen, die Arduino IDE gibt das aber
+              bei der loop-Funktion standardmäßig nicht vor */) {
         /* in dieser Funktion machen wir gar nichts */
 }

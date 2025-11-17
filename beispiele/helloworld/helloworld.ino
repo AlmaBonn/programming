@@ -4,9 +4,11 @@ void run (void) {
 }
 
 /* Der Code in der setup-Funktion wird genau einmal ausgeführt. */
-void setup (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
+void setup (/* hier könnte void stehen, die Arduino IDE gibt das aber
+               bei der setup-Funktion standardmäßig nicht vor */) {
   /* warte drei Sekunden zur Sicherheit, siehe
-     https://github.com/AlmaBonn/programming/wiki/Wichtige-Hinweise-zum-Mikrochip#delay */
+     https://github.com/AlmaBonn/programming/wiki/
+       Wichtige-Hinweise-zum-Mikrochip#delay */
   delay (3000);
 
   /* Initialisiere Konsole mit der Datenrate von 9600 Bits pro Sekunde. */
@@ -17,7 +19,8 @@ void setup (/* hier könnte void stehen, die Arduino IDE macht das aber standard
 }
 
 /* Der Code in der loop-Funktion wird wiederholt ausgeführt. */
-void loop (/* hier könnte void stehen, die Arduino IDE macht das aber standardmäßig nicht */) {
+void loop (/* hier könnte void stehen, die Arduino IDE gibt das aber
+              bei der loop-Funktion standardmäßig nicht vor */) {
   /* Wir führen nichts in dieser Funktion aus.
    * Wenn wir Code wiederholt ausführen möchten, verwenden wir
    * eine Schleife (for oder while) in der run-Funktion.
