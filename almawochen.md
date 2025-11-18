@@ -62,10 +62,11 @@ Bitte beachten Sie: diese Liste der Themen ist
 
 ## Woche 6
 
- - Nochmal Algorithmus zum Zahlenschloss
- - Richtlinien zur Auswahl von Ganzzahl-Typen
+ - Algorithmus zum Zahlenschloss
+ - Syntax der while-Schleife
  - Ganzzahlige Potenzen berechnen
  - Linear congruential generator
+ - Richtlinien zur Auswahl von Ganzzahl-Typen
  - Demo Arithmetik und Überlauf
  - Sortieralgorithmen und ihre Komplexität
  - Der Bubblesort-Algorithmus
