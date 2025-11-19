@@ -56,6 +56,7 @@ void setup (/* hier könnte void stehen, die Arduino IDE gibt das aber
                bei der setup-Funktion standardmäßig nicht vor */) {
         int i;
         uint32_t fibo;
+        unsigned long time_start, time;
 
         /* warte drei Sekunden zur Sicherheit, siehe
            https://github.com/AlmaBonn/programming/wiki/
@@ -72,9 +73,15 @@ void setup (/* hier könnte void stehen, die Arduino IDE gibt das aber
 
                 /* rtiefe initialisieren wir für jede Fibonacci-Zahl neu */
                 rtiefe = 0;
+                /* Laufzeitmessung in Mikrosekunden */
+                time_start = micros ();
                 fibo = fibonacci (i);
                 /* wenn wir korrekt programmiert haben, ist rtiefe
                    wieder 0 */
+                /* solange die Differenz als unsigned long darstellbar ist,
+                   können wir die Zeit korrekt messen, also bis zu ca.
+                   70 Minuten */
+                time = micros () - time_start;
 
                 Serial.print ("Fibonacci-Zahl ");
                 Serial.print (i);
@@ -86,7 +93,10 @@ void setup (/* hier könnte void stehen, die Arduino IDE gibt das aber
                         /* wir haben mit maximaler Tiefe abgebrochen */
                         Serial.print (" ist vermutlich falsch mit ");
                 }
-                Serial.println (fibo);
+                Serial.print (fibo);
+                Serial.print (" und hat ");
+                Serial.print (time);
+                Serial.println (" Mikrosekunden benötigt.");
         }
 }
 
