@@ -71,17 +71,24 @@ Bitte beachten Sie: diese Liste der Themen ist
  - Sortieralgorithmen und ihre Komplexität
  - Der Bubblesort-Algorithmus
  - Der Mergesort-Algorithmus
- - Erklärung long-Typen und Zeitmessung
- - Demo Array-Argumente und break
 
 ## Woche 7
 
  - Landau-Notation
  - Theorie der Laufzeiten
+ - Array-Variablen und Indexierung
  - Der Quicksort-Algorithmus
+ - Übergabe von Funktionszeigern
+ - Erklärung long-Typen und Zeitmessung
+
+## Woche 8
+
+ - Motivation Graphentheorie
+
+## Woche xx
+
  - Demo Kontrollfluß für Schleifen
  - Promotionsregeln und Cast in C
- - Motivation Graphentheorie
 
 ## Woche 11
 
