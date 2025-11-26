@@ -138,6 +138,11 @@ void run (void) {
   } else {
     Serial.println ("Unser Test war nicht erfolgreich.");
   }
+
+  /* ------- Mögliches Todo ------- */
+  /* Implementieren Sie eine Funktion, die input mit 3 multipliziert.
+     Passen Sie den Code so an, dass er auch für andere Basen b > 3 genutzt
+     werden kann und die Basis nur an einer Stelle geändert werden muss. */
 }
 
 /* Der Code in der setup-Funktion wird genau einmal ausgeführt. */

@@ -130,6 +130,10 @@ void setup (/* hier könnte void stehen, die Arduino IDE gibt das aber
         /* rufe unser eigentliches Programm auf */
         run_forschleife ();
 
+        /* ------- Mögliches Todo ------- */
+        /* Summieren Sie mit einer For-Schleife die ersten n Quadrantzahlen auf.
+           Verifizieren Sie experimentell die geometrische Summenformel. */
+
         /* wir sind fertig, die Lampe geht an und bleibt dann an */
         digitalWrite (LED_BUILTIN, HIGH);
 }

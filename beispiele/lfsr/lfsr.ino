@@ -48,6 +48,13 @@ void setup ( /* hier könnte void stehen, die Arduino IDE gibt das aber
 
         /* aktuelle Systemzeit in ms modulo 1000 */
         led_millis = millis ();
+
+        /* ------- Mögliches Todo ------- */
+        /* Invertieren Sie die Funktion lfsr_schritt. Schreiben Sie also eine
+           Funktion, die nach einem Aufruf von lfsr_schritt den gleichen Bit
+           noch ein Mal zurückgibt und den Wert der Variable wort wieder auf den
+           Ursprungswert zurücksetzt. Dafür muss wort zu einer globalen Variable
+           gemacht werden (siehe Präsenzvorschlag 1). */
 }
 
 void loop ( /* hier könnte void stehen, die Arduino IDE gibt das aber

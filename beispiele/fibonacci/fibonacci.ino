@@ -97,6 +97,12 @@ void setup (/* hier könnte void stehen, die Arduino IDE gibt das aber
                 Serial.print (" und hat ");
                 Serial.print (time);
                 Serial.println (" Mikrosekunden benötigt.");
+
+                /* ------- Mögliches Todo ------- */
+                /* Berechnen Sie die gleiche Fibonacci-Zahl mithilfe einer
+                   iterativen Funktion. Bestimmen Sie auch die Laufzeit des
+                   iterativen Aufrufs und vergleichen Sie mit dem rekursiven
+                   Aufruf. */
         }
 }
 
