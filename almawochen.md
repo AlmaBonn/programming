@@ -84,18 +84,42 @@ Bitte beachten Sie: diese Liste der Themen ist
 ## Woche 8
 
  - Motivation Graphentheorie
+ - Definition Graph, Teilgraph
+ - Adjazenz- und Inzidenzmatrix
+ - Adjazenzlisten
+ - Kantenzug und Weg
+ - Zusammenhang
+ - Eulergraphen
+ - Euler-Graphalgorithmus
 
-## Woche xx
+## Woche 9
 
- - Demo Kontrollfluß für Schleifen
- - Promotionsregeln und Cast in C
+ - Baeume und Waelder
+ - Durchmusterung
+ - Dijkstras Algorithmus
+
+## Woche 10
+
+ - Mehr zu Graphen
 
 ## Woche 11
 
+ - Demo Kontrollfluß für Schleifen
+ - Promotionsregeln und Cast in C
  - Gleitkommazahlen und ihre Darstellung im Computer
- - Gleitkommatheorie: Genauigkeit, Rundungsfehler, Auslöschung
 
-## Woche 15
+## Woche 12
+
+ - Gleitkommagenauigkeit, Rundungsfehler, Auslöschung
+ - Lineare Gleichungssysteme
+ - Loesbarkeit und Determinante
+
+## Woche 13
+
+ - Gausssche Elimination
+ - Stabilitaet und Kondition
+
+## Woche xx
 
  - Ternärer und Komma-Operator
  - Komplette Präzedenztabelle der C-Operatoren
