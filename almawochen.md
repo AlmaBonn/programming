@@ -87,20 +87,22 @@ Bitte beachten Sie: diese Liste der Themen ist
  - Definition Graph, Teilgraph
  - Adjazenz- und Inzidenzmatrix
  - Adjazenzlisten
+ - komprimiertes Speichern
  - Kantenzug und Weg
  - Zusammenhang
- - Eulergraphen
+ - Eulersche Graphen
  - Euler-Graphalgorithmus
 
 ## Woche 9
 
+ - Saetze zum Zusammenhang
  - Baeume und Waelder
  - Durchmusterung
  - Dijkstras Algorithmus
 
 ## Woche 10
 
- - Mehr zu Graphen
+ - Mehr zu Graphen (Fluesse)
 
 ## Woche 11
 
