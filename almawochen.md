@@ -91,10 +91,11 @@ Bitte beachten Sie: diese Liste der Themen ist
  - Kantenzug und Weg
  - Zusammenhang
  - Eulersche Graphen
- - Euler-Graphalgorithmus
+ - Hierholzer-Graphalgorithmus
 
 ## Woche 9
 
+ - Beweis Korrektheit Hierholzer
  - Saetze zum Zusammenhang
  - Baeume und Waelder
  - Durchmusterung
