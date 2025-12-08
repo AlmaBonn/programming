@@ -6,6 +6,9 @@
 # Eine Variablendefinition bewirkt für sich noch nichts.
 ZIELE = justsome ohnechip fuenfplus zschloss
 
+# Wir versammeln die Optionen zum Compiler in einer Variablen.
+# WARNFLAGS = -Wall -Wextra -Wno-unused-parameter
+
 # Hier die erste Definition einer Abhängigkeit über den Doppelpunkt.
 # Die Syntax ist Ziel: Quelle(n), letztere getrennt durch Leerzeichen.
 #
@@ -26,15 +29,15 @@ ohnechip: ohnechip.c
 # alle benoetigten Aufrufe zum Erzeugen des Ziels aus seinen Quellen.
 # Diese Aufruf-Zeilen *müssen* mit einem TAB-Zeichen beginnen!
 # Manche Editoren wandeln TABs in Leerzeichen um, das gilt es zu verhindern.
-	gcc -Wall -Wextra $^ -o $@
+	gcc $(WARNFLAGS) $^ -o $@
 
 # Weitere Abhaengigkeiten dieser Art.
 justsome: justsome.c
-	gcc -Wall -Wextra $^ -o $@
+	gcc $(WARNFLAGS) $^ -o $@
 fuenfplus: fuenfplus.c
-	gcc -Wall -Wextra $^ -o $@
+	gcc $(WARNFLAGS) $^ -o $@
 zschloss: zschloss.c
-	gcc -Wall -Wextra $^ -o $@
+	gcc $(WARNFLAGS) $^ -o $@
 
 # Wir haben in der obigen Regel zwei der internen Variablen abgerufen:
 # $@ setzt das Ziel ein.  Das Symbol ähnelt optisch einer Zielscheibe!

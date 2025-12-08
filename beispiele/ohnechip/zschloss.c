@@ -6,7 +6,7 @@
 
 /* Ein Schloss, das sich gar nicht öffnen läßt */
 static int
-oeffnetnicht (int [], int) {
+oeffnetnicht (int c[], int n) {
   return 0;
 }
 
