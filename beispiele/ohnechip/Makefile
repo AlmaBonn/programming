@@ -32,7 +32,7 @@ ohnechip: ohnechip.c
 # alle benoetigten Aufrufe zum Erzeugen des Ziels aus seinen Quellen.
 # Diese Aufruf-Zeilen *müssen* mit einem TAB-Zeichen beginnen!
 # Manche Editoren wandeln TABs in Leerzeichen um, das gilt es zu verhindern.
-	gcc $(WARNFLAGS) $^ -o $@
+	gcc $(WARNFLAGS) $^ -o $@ $(LDFLAGS)
 
 # Weitere Abhaengigkeiten dieser Art.
 justsome: justsome.c
