@@ -4,7 +4,7 @@
 
 # Im Makefile kann man nach Belieben Variablen definieren.
 # Eine Variablendefinition bewirkt für sich noch nichts.
-ZIELE = justsome ohnechip fuenfplus zschloss
+ZIELE = justsome ohnechip fuenfplus zschloss epower
 
 # Wir versammeln die Optionen zum Compiler in einer Variablen.
 WARNFLAGS = -Wall -Wextra -Wno-unused-parameter
@@ -40,6 +40,8 @@ justsome: justsome.c
 fuenfplus: fuenfplus.c
 	gcc $(WARNFLAGS) $^ -o $@ $(LDFLAGS)
 zschloss: zschloss.c
+	gcc $(WARNFLAGS) $^ -o $@ $(LDFLAGS)
+epower: epower.c
 	gcc $(WARNFLAGS) $^ -o $@ $(LDFLAGS)
 
 # Wir haben in der obigen Regel zwei der internen Variablen abgerufen:
