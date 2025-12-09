@@ -7,7 +7,10 @@
 ZIELE = justsome ohnechip fuenfplus zschloss
 
 # Wir versammeln die Optionen zum Compiler in einer Variablen.
-# WARNFLAGS = -Wall -Wextra -Wno-unused-parameter
+WARNFLAGS = -Wall -Wextra -Wno-unused-parameter
+
+# Wir versammeln Anweisungen zum Linken in einer Variablen.
+LDFLAGS = -lm
 
 # Hier die erste Definition einer Abhängigkeit über den Doppelpunkt.
 # Die Syntax ist Ziel: Quelle(n), letztere getrennt durch Leerzeichen.
@@ -33,11 +36,11 @@ ohnechip: ohnechip.c
 
 # Weitere Abhaengigkeiten dieser Art.
 justsome: justsome.c
-	gcc $(WARNFLAGS) $^ -o $@
+	gcc $(WARNFLAGS) $^ -o $@ $(LDFLAGS)
 fuenfplus: fuenfplus.c
-	gcc $(WARNFLAGS) $^ -o $@
+	gcc $(WARNFLAGS) $^ -o $@ $(LDFLAGS)
 zschloss: zschloss.c
-	gcc $(WARNFLAGS) $^ -o $@
+	gcc $(WARNFLAGS) $^ -o $@ $(LDFLAGS)
 
 # Wir haben in der obigen Regel zwei der internen Variablen abgerufen:
 # $@ setzt das Ziel ein.  Das Symbol ähnelt optisch einer Zielscheibe!
