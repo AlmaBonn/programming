@@ -120,6 +120,7 @@ Bitte beachten Sie: diese Liste der Themen ist
 
 ## Woche 12
 
+ - Letzter Graphalgorithmus
  - Gleitkommazahlen und ihre Darstellung im Computer
  - Gleitkommagenauigkeit, Rundungsfehler, Auslöschung
  - Stabilitaet und Kondition
