@@ -99,28 +99,38 @@ Bitte beachten Sie: diese Liste der Themen ist
  - Saetze zum Zusammenhang
  - Baeume und Waelder
  - Durchmusterung
- - Dijkstras Algorithmus
+ - Beispiele
+ - Korrektheitsbeweis Durchmusterung
 
 ## Woche 10
 
+ - Gewichtete Graphen
+ - Dijkstras Algorithmus
+ - Beispiele
+ - Beweis zu Dijkstra
  - Mehr zu Graphen (Fluesse)
 
 ## Woche 11
 
- - Demo Kontrollfluß für Schleifen
+ - Algorithmus binärer Heap
+ - Approximation Exponentialfunktion
  - Promotionsregeln und Cast in C
- - Gleitkommazahlen und ihre Darstellung im Computer
+ - Demo Kontrollfluß für Schleifen
+ - Demo Cantormenge
 
 ## Woche 12
 
+ - Gleitkommazahlen und ihre Darstellung im Computer
  - Gleitkommagenauigkeit, Rundungsfehler, Auslöschung
+ - Stabilitaet und Kondition
  - Lineare Gleichungssysteme
  - Loesbarkeit und Determinante
 
 ## Woche 13
 
  - Gausssche Elimination
- - Stabilitaet und Kondition
+ - Pivotisierung
+ - LR-Zerlegung
 
 ## Woche xx
 
