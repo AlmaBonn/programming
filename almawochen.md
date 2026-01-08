@@ -106,35 +106,34 @@ Bitte beachten Sie: diese Liste der Themen ist
 
  - Gewichtete Graphen
  - Dijkstras Algorithmus
+ - Algorithmen binärer Heap
  - Beispiele
- - Beweis zu Dijkstra
- - Mehr zu Graphen (Fluesse)
 
 ## Woche 11
 
- - Algorithmus binärer Heap
+ - Beweis zu Dijkstra
+ - Heapsort
  - Approximation Exponentialfunktion
- - Promotionsregeln und Cast in C
- - Demo Kontrollfluß für Schleifen
- - Demo Cantormenge
+ - Fluesse in Netzwerken
+ - Max-Flow-Min-Cut Theorem
+ - Ford-Fulkerson Algorithmus
 
 ## Woche 12
 
- - Letzter Graphalgorithmus
  - Gleitkommazahlen und ihre Darstellung im Computer
- - Gleitkommagenauigkeit, Rundungsfehler, Auslöschung
- - Stabilitaet und Kondition
- - Lineare Gleichungssysteme
- - Loesbarkeit und Determinante
+ - Rundungsfehler und Maschinengenauigkeit
+ - Gausssche Elimination
 
 ## Woche 13
 
- - Gausssche Elimination
- - Pivotisierung
  - LR-Zerlegung
+ - Pivotisierung
+ - Fehlerfortpflanzung, Auslöschung
+ - Stabilitaet und Kondition
 
-## Woche xx
+## Woche 14
 
+ - Promotionsregeln und Cast in C
  - Ternärer und Komma-Operator
  - Komplette Präzedenztabelle der C-Operatoren
  - Strukturen in C
