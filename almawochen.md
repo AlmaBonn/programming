@@ -127,12 +127,14 @@ Bitte beachten Sie: diese Liste der Themen ist
 ## Woche 13
 
  - LR-Zerlegung
- - Pivotisierung
  - Fehlerfortpflanzung, Auslöschung
  - Stabilitaet und Kondition
+ - Pivotisierung
 
 ## Woche 14
 
+ - Permutationsmatrizen
+ - LR-Zerlegung mit Vertauschung
  - Promotionsregeln und Cast in C
  - Ternärer und Komma-Operator
  - Komplette Präzedenztabelle der C-Operatoren
