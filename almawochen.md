@@ -129,12 +129,17 @@ Bitte beachten Sie: diese Liste der Themen ist
  - LR-Zerlegung
  - Fehlerfortpflanzung, Auslöschung
  - Stabilitaet und Kondition
- - Pivotisierung
+ - Pivotisierung (Prinzip)
+ - Heapsort
 
 ## Woche 14
 
  - Permutationsmatrizen
  - LR-Zerlegung mit Vertauschung
+ - Binäre Suche
+
+## Weggelassen
+
  - Promotionsregeln und Cast in C
  - Ternärer und Komma-Operator
  - Komplette Präzedenztabelle der C-Operatoren
