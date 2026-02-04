@@ -65,7 +65,6 @@ Bitte beachten Sie: diese Liste der Themen ist
  - Algorithmus zum Zahlenschloss
  - Syntax der while-Schleife
  - Ganzzahlige Potenzen berechnen
- - Linear congruential generator
  - Richtlinien zur Auswahl von Ganzzahl-Typen
  - Demo Arithmetik und Überlauf
  - Sortieralgorithmen und ihre Komplexität
@@ -113,10 +112,10 @@ Bitte beachten Sie: diese Liste der Themen ist
 
  - Beweis zu Dijkstra
  - Heapsort
- - Approximation Exponentialfunktion
  - Fluesse in Netzwerken
- - Max-Flow-Min-Cut Theorem
+ - Augmentierender Weg
  - Ford-Fulkerson Algorithmus
+ - Max-Flow-Min-Cut Theorem
 
 ## Woche 12
 
@@ -126,11 +125,11 @@ Bitte beachten Sie: diese Liste der Themen ist
 
 ## Woche 13
 
- - LR-Zerlegung
+ - LR-Zerlegung Beweis/Struktur
  - Fehlerfortpflanzung, Auslöschung
- - Stabilitaet und Kondition
+ - Absolute und relative Kondition
+ - Stabilitaet (Definition)
  - Pivotisierung (Prinzip)
- - Heapsort
 
 ## Woche 14
 
