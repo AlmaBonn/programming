@@ -3,15 +3,15 @@
 #include <stdlib.h>
 
 /* Eine lokale Funktion, um die Fakultaet zu berechnen */
-static int
+static long
 fakultaet (int n) {
 
 	int i;
-	int faku = 1;
+	long faku = 1;
 
 	for (i = 1; i <= n; ++i) {
 
-		faku = faku * i;
+		faku *= i;
 
 	}
 
@@ -27,7 +27,7 @@ int
 main (int argc, char *argv[]) {
 
 	int n = 0;
-	int faku = -1;
+	long faku = -1;
 
 	if (argc > 1) {
 
@@ -37,7 +37,7 @@ main (int argc, char *argv[]) {
 
 	faku = fakultaet (n);
 
-	printf ("Fakultät von %d ist %d\n", n, faku);
+	printf ("Fakultät von %d ist %ld\n", n, faku);
 
 	return 0;
 }
