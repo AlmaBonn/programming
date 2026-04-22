@@ -11,7 +11,8 @@ fakultaet (int n);
 static long
 nueberk (int n, int k) {
 
-	return 0;
+	return fakultaet (n) /
+	       (fakultaet (k) * fakultaet (n - k));
 }
 
 /* Die main-Funktion kann zwei Argumente bearbeiten:
