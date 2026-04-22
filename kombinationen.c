@@ -1,10 +1,9 @@
 
+/* Dieses Programm soll n Fakultaet berechnen. */
+
 #include <stdio.h>
 #include <stdlib.h>
-
-/* Eine Funktion, um die Fakultaet zu berechnen */
-long
-fakultaet (int n);
+#include "nurfakultaet.h"
 
 /* Die main-Funktion kann zwei Argumente bearbeiten:
  * Das erste (hier genannt argc) ist die Anzahl

@@ -1,4 +1,6 @@
 
+#include "nurfakultaet.h"
+
 /* Eine Funktion, um die Fakultaet zu berechnen */
 long
 fakultaet (int n) {

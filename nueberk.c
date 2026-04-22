@@ -3,10 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
-/* Eine Funktion, um die Fakultaet zu berechnen */
-long
-fakultaet (int n);
+#include "nurfakultaet.h"
 
 static long
 nueberk (int n, int k) {
