@@ -2,21 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Eine lokale Funktion, um die Fakultaet zu berechnen */
-static long
-fakultaet (int n) {
-
-	int i;
-	long faku = 1;
-
-	for (i = 1; i <= n; ++i) {
-
-		faku *= i;
-
-	}
-
-	return faku;
-}
+/* Eine Funktion, um die Fakultaet zu berechnen */
+long
+fakultaet (int n);
 
 /* Die main-Funktion kann zwei Argumente bearbeiten:
  * Das erste (hier genannt argc) ist die Anzahl
