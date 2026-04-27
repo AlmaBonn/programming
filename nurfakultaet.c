@@ -16,4 +16,3 @@ fakultaet (int n) {
 
 	return faku;
 }
-

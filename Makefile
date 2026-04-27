@@ -1,10 +1,21 @@
 
-alleziele: nurfakultaet.o testdatei
+ZIELE = nueberk fakultaet testdatei
 
-nurfakultaet.o: nurfakultaet.c
-	gcc -Wall -c nurfakultaet.c
+alleziele: $(ZIELE)
+
+nueberk: nueberk.o nurfakultaet.o
+	gcc -o $@ $^
+
+fakultaet: kombinationen.o nurfakultaet.o
+	gcc -o $@ $^
+
+.c.o:
+	gcc -Wall -c $<
 
 testdatei:
-	echo "Dies ist eine Testdatei." > testdatei
+	echo "Dies ist eine Testdatei." > $@
 
-.PHONY: alleziele
+clean:
+	rm -f *.o $(ZIELE)
+
+.PHONY: alleziele clean
