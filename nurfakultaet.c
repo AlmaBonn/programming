@@ -1,14 +1,14 @@
 
 #include "nurfakultaet.h"
 
-/* Eine Funktion, um die Fakultaet zu berechnen */
-long
-fakultaet (int n) {
+/* Eine Funktion, um die Fakultaet zu berechnen, von Index k an. */
+static long
+fakultaetabk (int n, int k) {
 
 	int i;
 	long faku = 1;
 
-	for (i = 2; i <= n; ++i) {
+	for (i = k; i <= n; ++i) {
 
 		faku *= i;
 
@@ -19,8 +19,16 @@ fakultaet (int n) {
 }
 
 long
+fakultaet (int n) {
+
+	return fakultaetabk (n, 2);
+}
+
+long
 nueberk (int n, int k) {
 
-	return fakultaet (n) /
-	       (fakultaet (k) * fakultaet (n - k));
+	if (n < 0) return -1;
+	if (k < 0 || n < k) return 0;
+
+	return fakultaetabk (n, k + 1) / fakultaet (n - k);
 }
