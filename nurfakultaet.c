@@ -15,4 +15,12 @@ fakultaet (int n) {
 	}
 
 	return faku;
+
+}
+
+long
+nueberk (int n, int k) {
+
+	return fakultaet (n) /
+	       (fakultaet (k) * fakultaet (n - k));
 }

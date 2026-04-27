@@ -5,13 +5,6 @@
 #include <stdlib.h>
 #include "nurfakultaet.h"
 
-static long
-nueberk (int n, int k) {
-
-	return fakultaet (n) /
-	       (fakultaet (k) * fakultaet (n - k));
-}
-
 /* Die main-Funktion kann zwei Argumente bearbeiten:
  * Das erste (hier genannt argc) ist die Anzahl
  *    Woerter auf der Kommandozeile (inklusive des Programmnamens)
