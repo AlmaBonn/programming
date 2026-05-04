@@ -1,7 +1,13 @@
 
-ZIELE = nueberk fakultaet wuerfeln testdatei
+ZIELE = nueberk fakultaet wuerfeln testdatei ergebnis.pdf
 
 alleziele: $(ZIELE)
+
+ergebnis.pdf: wuerfelplot ergebnis
+	gnuplot $<
+
+ergebnis: wuerfeln
+	./wuerfeln 10000000 | grep '^ERGEBNIS' > ergebnis
 
 wuerfeln: wuerfeln.o
 	gcc -o $@ $^
