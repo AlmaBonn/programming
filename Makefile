@@ -25,6 +25,6 @@ testdatei:
 	echo "Dies ist eine Testdatei." > $@
 
 clean:
-	rm -f *.o $(ZIELE)
+	rm -f *.o $(ZIELE) ergebnis
 
 .PHONY: alleziele clean
