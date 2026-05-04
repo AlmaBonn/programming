@@ -35,7 +35,7 @@ main (int argc, char *argv[]) {
 	}
 
 	for (i = 0; i < 6; ++i) {
-                printf ("ERGEBNIS %d %d\n", i, anzahlen[i]);
+                printf ("ERGEBNIS %d %d\n", i + 1, anzahlen[i]);
 	}
 
 	return 0;
