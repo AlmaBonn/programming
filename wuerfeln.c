@@ -21,7 +21,7 @@ main (int argc, char *argv[]) {
 	}
 	printf ("Wuerfele %d mal\n", n);
 
-	for (i = 0; i < n; ++i) {
+	for (i = 0; i < 6; ++i) {
 		anzahlen[i] = 0;
         }
 
