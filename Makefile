@@ -1,7 +1,10 @@
 
-ZIELE = nueberk fakultaet testdatei
+ZIELE = nueberk fakultaet wuerfeln testdatei
 
 alleziele: $(ZIELE)
+
+wuerfeln: wuerfeln.o
+	gcc -o $@ $^
 
 nueberk: nueberk.o nurfakultaet.o
 	gcc -o $@ $^
