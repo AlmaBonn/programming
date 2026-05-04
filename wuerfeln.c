@@ -34,5 +34,9 @@ main (int argc, char *argv[]) {
                 ++anzahlen[wuerfelwert];
 	}
 
+	for (i = 0; i < 6; ++i) {
+                printf ("ERGEBNIS %d %d\n", i, anzahlen[i]);
+	}
+
 	return 0;
 }
