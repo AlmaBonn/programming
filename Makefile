@@ -17,10 +17,7 @@ plot: ergebnis_$(WN).pdf
 alles: $(ZIELE) plot
 
 ergebnis_$(WN).pdf: wuerfelplot ergebnis_$(WN).temp
-	cp -f ergebnis_$(WN).temp ergebnis.temp
-	gnuplot $<
-	rm -f ergebnis.temp
-	mv -f ergebnis.pdf $@
+	gnuplot -e 'inputfile="ergebnis_$(WN).temp"; outputfile="$@"' $<
 
 ergebnis_$(WN).temp: wuerfeln
 	./wuerfeln $(WN) | grep '^ERGEBNIS' > $@

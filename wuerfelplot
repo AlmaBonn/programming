@@ -1,7 +1,9 @@
+# Expect two variables: inputfile and outputfile
+
 set style fill solid
 set style data histogram
 set autoscale
 set yrange [0:]
 set term pdfcairo
-set output "ergebnis.pdf"
-plot "ergebnis.temp" using 3:xticlabels(2) title "Wuerfel"
+set output outputfile
+plot inputfile using 3:xticlabels(2) title "Wuerfel"
