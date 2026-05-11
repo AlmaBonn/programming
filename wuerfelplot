@@ -4,4 +4,4 @@ set autoscale
 set yrange [0:]
 set term pdfcairo
 set output "ergebnis.pdf"
-plot "ergebnis" using 3:xticlabels(2) title "Wuerfel"
+plot "ergebnis.temp" using 3:xticlabels(2) title "Wuerfel"
