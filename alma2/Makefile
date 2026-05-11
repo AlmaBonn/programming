@@ -1,13 +1,26 @@
 
-ZIELE = nueberk fakultaet wuerfeln testdatei ergebnis.pdf
+# Dieses Makefile erzeugt ein Diagramm aus einer Wuerfelsimulation.
+# Die Anzahl der Würfe läßt sich über die Variable WN festlegen.
+# Beispielsweise kann man aufrufen: make WN=6000000
 
-alleziele: $(ZIELE)
+# Makefiles koennen Variablen
+CFLAGS = -Wall
 
-ergebnis.pdf: wuerfelplot ergebnis
-	gnuplot $<
+# Anzahl der Wuerfe, sofern nicht per Kommandozeile überschrieben
+WN = 6000
 
-ergebnis: wuerfeln
-	./wuerfeln 10000000 | grep '^ERGEBNIS' > ergebnis
+ZIELE = nueberk fakultaet wuerfeln testdatei
+
+# $(WN) muss ueberall gleichermassen angehangen werden
+plot: ergebnis_$(WN).pdf
+
+alles: $(ZIELE) plot
+
+ergebnis_$(WN).pdf: wuerfelplot ergebnis_$(WN).temp
+	gnuplot -e 'inputfile="ergebnis_$(WN).temp"; outputfile="$@"' $<
+
+ergebnis_$(WN).temp: wuerfeln
+	./wuerfeln $(WN) | grep '^ERGEBNIS' > $@
 
 wuerfeln: wuerfeln.o
 	gcc -o $@ $^
@@ -19,12 +32,17 @@ fakultaet: kombinationen.o nurfakultaet.o
 	gcc -o $@ $^
 
 .c.o:
-	gcc -Wall -c $<
+	gcc $(CFLAGS) -c $<
 
 testdatei:
 	echo "Dies ist eine Testdatei." > $@
 
-clean:
-	rm -f *.o $(ZIELE) ergebnis
+# Vielleicht möchte man die Plots erhalten
+mostlyclean:
+	rm -f *.o $(ZIELE) ergebnis*.temp
 
-.PHONY: alleziele clean
+# Lösche wirklich alle generierten Dateien
+clean: mostlyclean
+	rm -f ergebnis_*.pdf
+
+.PHONY: alles clean mostlyclean plot
