@@ -9,7 +9,7 @@ CFLAGS = -Wall
 # Anzahl der Wuerfe, sofern nicht per Kommandozeile überschrieben
 WN = 6000
 
-ZIELE = nueberk fakultaet wuerfeln zeiger testdatei
+ZIELE = nueberk fakultaet wuerfeln zeiger1 testdatei
 
 # Das erste angegebene Ziel wird erzeugt durch ein einfaches 'make'.
 alles: $(ZIELE) plot
@@ -32,7 +32,7 @@ nueberk: nueberk.o nurfakultaet.o
 fakultaet: kombinationen.o nurfakultaet.o
 	gcc -o $@ $^
 
-zeiger: zeiger.o
+zeiger1: zeiger1.o
 	gcc -o $@ $^
 
 .c.o:
