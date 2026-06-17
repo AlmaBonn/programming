@@ -9,7 +9,10 @@ CFLAGS = -Wall
 # Anzahl der Wuerfe, sofern nicht per Kommandozeile überschrieben
 WN = 6000
 
-ZIELE = nueberk fakultaet wuerfeln testdatei
+ZIELE = nueberk fakultaet wuerfeln testdatei zeiger2
+
+zeiger2: zeiger2.o
+	gcc -o $@ $^
 
 # $(WN) muss ueberall gleichermassen angehangen werden
 plot: ergebnis_$(WN).pdf
