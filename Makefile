@@ -9,15 +9,13 @@ CFLAGS = -Wall
 # Anzahl der Wuerfe, sofern nicht per Kommandozeile überschrieben
 WN = 6000
 
-ZIELE = nueberk fakultaet wuerfeln testdatei zeiger2
+ZIELE = nueberk fakultaet wuerfeln testdatei zeiger1 zeiger2
 
-zeiger2: zeiger2.o
-	gcc -o $@ $^
+# Das erste angegebene Ziel wird erzeugt durch ein einfaches 'make'.
+alles: $(ZIELE) plot
 
 # $(WN) muss ueberall gleichermassen angehangen werden
 plot: ergebnis_$(WN).pdf
-
-alles: $(ZIELE) plot
 
 ergebnis_$(WN).pdf: wuerfelplot ergebnis_$(WN).temp
 	gnuplot -e 'inputfile="ergebnis_$(WN).temp"; outputfile="$@"' $<
@@ -32,6 +30,12 @@ nueberk: nueberk.o nurfakultaet.o
 	gcc -o $@ $^
 
 fakultaet: kombinationen.o nurfakultaet.o
+	gcc -o $@ $^
+
+zeiger1: zeiger1.o
+	gcc -o $@ $^
+
+zeiger2: zeiger2.o
 	gcc -o $@ $^
 
 .c.o:
