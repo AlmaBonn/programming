@@ -32,4 +32,4 @@ clean: mostlyclean
 	rm -f *.o $(ZIELE)
 
 # Ziele (Knoten im Abhängkeitswald), die keine Datei dieses Namens sind.
-.PHONY: alles report
+.PHONY: alles report mostlyclean clean
