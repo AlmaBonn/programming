@@ -10,15 +10,34 @@ int
 main (int argc, char **argv) {
 
   int n;
+  int retval;
   float ti, bi;
 
-  do {
+  float sum_t, sum_b, sum_tt, sum_tb;
 
-    n = scanf ("%g %g", &ti, &bi);
+  n = 0;
+  sum_t = sum_b = sum_tt = sum_tb = 0.;
+  for (;;) {
 
-    printf ("Eingabe mit %d: %f %f\n", n, ti, bi);
+    retval = scanf ("%g %g", &ti, &bi);
+    printf ("Eingabe mit %d: %f %f\n", retval, ti, bi);
 
-  } while (n == 2);
+    if (retval == 2) {
+
+      sum_t += ti;
+      sum_b += bi;
+      sum_tt += ti * ti;
+      sum_tb += ti * bi;
+
+      ++n;
+
+    }
+    else {
+
+      break;
+    }
+
+  };
 
   return 0;
 }
