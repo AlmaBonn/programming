@@ -9,13 +9,13 @@
 int
 main (int argc, char **argv) {
 
-  int n;
+  int m;
   int retval;
   float ti, bi;
 
   float sum_t, sum_b, sum_tt, sum_tb;
 
-  n = 0;
+  m = 0;
   sum_t = sum_b = sum_tt = sum_tb = 0.;
   for (;;) {
 
@@ -29,7 +29,7 @@ main (int argc, char **argv) {
       sum_tt += ti * ti;
       sum_tb += ti * bi;
 
-      ++n;
+      ++m;
 
     }
     else {
