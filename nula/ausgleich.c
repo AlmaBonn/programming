@@ -12,6 +12,7 @@ main (int argc, char **argv) {
   int m;
   int retval;
   float ti, bi;
+  float det;
 
   float sum_t, sum_b, sum_tt, sum_tb;
 
@@ -38,6 +39,13 @@ main (int argc, char **argv) {
     }
 
   };
+
+  det = m * sum_tt - sum_t * sum_t;
+
+  if (det <= 0.) {
+    printf ("Insufficient data\n");
+    return 1;
+  }
 
   return 0;
 }
