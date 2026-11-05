@@ -12,7 +12,8 @@ main (int argc, char **argv) {
   int m;
   int retval;
   float ti, bi;
-  float det;
+  float det, idet;
+  float a, c;  /* Suche b(t) =? a*t + c */
 
   float sum_t, sum_b, sum_tt, sum_tb;
 
@@ -46,6 +47,12 @@ main (int argc, char **argv) {
     printf ("Insufficient data\n");
     return 1;
   }
+  idet = 1. / det;
+
+  c = idet * (sum_b * sum_tt - sum_t * sum_tb);
+  a = idet * (m * sum_tb - sum_t * sum_b);
+
+  printf ("Wir haben at + c mit a = %g, c = %g\n", a, c);
 
   return 0;
 }
