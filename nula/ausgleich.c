@@ -10,7 +10,6 @@ int
 main (int argc, char **argv) {
 
   int m;
-  int retval;
   float ti, bi;
   float det, idet;
   float a, c;  /* Suche b(t) =? a*t + c */
@@ -21,7 +20,7 @@ main (int argc, char **argv) {
   sum_t = sum_b = sum_tt = sum_tb = 0.;
   for (;;) {
 
-    retval = scanf ("%g %g", &ti, &bi);
+    int retval = scanf ("%g %g", &ti, &bi);
     printf ("Eingabe mit %d: %f %f\n", retval, ti, bi);
 
     if (retval == 2) {
