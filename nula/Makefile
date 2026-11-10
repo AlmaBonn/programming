@@ -1,24 +1,27 @@
 
 # Dieses Makefile erzeugt ein Diagramm aus einer Regression.
 
-# Makefiles koennen Variablen
+# Makefiles koennen Variablen definieren
 # Variablen sind aber an sich keine Ziele
 CFLAGS = -Wall
 EINGABE = eingaben.txt
 ZIELE = ausgleich matrizen
 
+# Das erste angegebene Ziel wird erzeugt durch ein einfaches 'make'.
 meinziel: matrizen
 
-# Ein Ziel ist definiert über den Doppelpunkt am Ende ':'
-# Das erste angegebene Ziel wird erzeugt durch ein einfaches 'make'.
-alles: report
+# Ein Ziel ist immer definiert über den Doppelpunkt am Ende ':'
+alles: report matrizen
 
 # Das Ziel 'report' entspricht keiner Datei, sondern strukturiert nur.
 report: ausgleich $(EINGABE)
 	cat $(EINGABE) | ./ausgleich
 
-# Erzeuge ein Hauptprogramm aus Maschinencode
+# Erzeuge mehrere Hauptprogramme aus Maschinencode
 ausgleich: ausgleich.o
+	gcc -o $@ $^
+
+matrizen: matrizen.o
 	gcc -o $@ $^
 
 # Erzeuge Maschinencode aus einer C-Programmdatei
