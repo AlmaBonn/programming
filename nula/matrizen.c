@@ -7,9 +7,12 @@ struct s_matrix
   int m;
   int n;
 
-  /* eintraege kommen noch */
+  /* Array mit m * n eintraegen */
+  double *eintraege;
 };
-  
+
+/* Abkuerzung: typedef <alter Typ> <neuer Name> */
+typedef struct s_matrix sma;
 
 
 /* Input: matrix A, quadratisch, wird nicht veraendert */
@@ -20,7 +23,7 @@ struct s_matrix
  * Rueckgabe: 0 ohne Fehler, negativ sonst
  */
 int
-invertiere (struct s_matrix A, struct s_matrix Ainv)
+invertiere (sma *A, sma *Ainv)
 {
 
 
@@ -31,6 +34,11 @@ invertiere (struct s_matrix A, struct s_matrix Ainv)
 int
 main (int argc, char **argv) {
 
+  double eintraegeA[4] = { 1, 5, 3, 2 };
+
+  sma meinA;
+  meinA.m = meinA.n = 2;
+  meinA.eintraege = eintraegeA;
 
   return 0;
 }
