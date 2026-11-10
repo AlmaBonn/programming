@@ -5,7 +5,9 @@
 # Variablen sind aber an sich keine Ziele
 CFLAGS = -Wall
 EINGABE = eingaben.txt
-ZIELE = ausgleich
+ZIELE = ausgleich matrizen
+
+meinziel: matrizen
 
 # Ein Ziel ist definiert über den Doppelpunkt am Ende ':'
 # Das erste angegebene Ziel wird erzeugt durch ein einfaches 'make'.
