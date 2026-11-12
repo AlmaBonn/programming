@@ -81,7 +81,7 @@ invertiere (sma *A, sma *Ainv)
   invdet = 1. / Adet;
 
   Ainv->eintraege[0] = invdet * A->eintraege[3];
-  Ainv->eintraege[3] = invdet * A->eintraege[1];
+  Ainv->eintraege[3] = invdet * A->eintraege[0];
   Ainv->eintraege[1] = -invdet * A->eintraege[1];
   Ainv->eintraege[2] = -invdet * A->eintraege[2];
   return 0;
