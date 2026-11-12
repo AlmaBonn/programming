@@ -22,7 +22,8 @@ typedef struct s_matrix sma;
 
 /* Alloziere eine Matrix-Struktur vorgegebener Dimensionierung
  * mit allozierten Einträgen (von undefinierten Werten). */
-sma *matrix_alloziere (int m, int n)
+sma *
+matrix_allozieren (int m, int n)
 {
   sma *matr;
 
@@ -35,7 +36,8 @@ sma *matrix_alloziere (int m, int n)
 }
 
 /* Gebe allozierten Speicher der Struktur wieder frei. */
-void matrix_freigeben (sma *matr)
+void
+matrix_freigeben (sma *matr)
 {
   /* Die Einträge freigeben, solange mir sie noch erreichen können. */
   free (matr->eintraege);
@@ -58,7 +60,7 @@ void matrix_freigeben (sma *matr)
  * Rückgabe: 0 ohne Fehler, negativ sonst
  */
 int
-invertiere (sma *A, sma *Ainv)
+matrix_invertieren (sma *A, sma *Ainv)
 {
   double Adet, invdet;
 
@@ -104,7 +106,7 @@ main (int argc, char **argv)
   int result;
 
   /* Alloziere Eingabematrix */
-  meinA = matrix_alloziere (2, 2);
+  meinA = matrix_allozieren (2, 2);
 
   /* Initialisiere Eingabematrix */
   for (i = 0; i < 2 * 2; ++i) {
@@ -112,10 +114,10 @@ main (int argc, char **argv)
   }
 
   /* Initialisiere Ausgabematrix */
-  meinInv = matrix_alloziere (2, 2);
+  meinInv = matrix_allozieren (2, 2);
 
   /* Invertiere Matrix und fange Fehlerfälle ab */
-  result = invertiere (meinA, meinInv);
+  result = matrix_invertieren (meinA, meinInv);
   if (result != 0) {
     printf ("Fehler bei der Invertierung\n");
     return EXIT_FAILURE;
