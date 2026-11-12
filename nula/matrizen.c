@@ -88,32 +88,37 @@ invertiere (sma *A, sma *Ainv)
 int
 main (int argc, char **argv)
 {
+  int i;
 
   /* Speicher für die Matrixeinträge */
   double eintraegeA[4] = { 1, 5, 3, 2 };
-  double eintraegeInv[4];
 
   /* Speicher für die Matrix-Metadaten */
-  sma meinA;
-  sma meinInv;
+  sma *meinA;
+  sma *meinInv;
 
   /* Rückgabewert */
   int result;
 
-  /* Initialisiere Eingabematrix */
-  meinA.m = meinA.n = 2;
-  meinA.eintraege = eintraegeA;
+  /* Alloziere Eingabematrix */
+  meinA = matrix_alloziere (2, 2);
+  for (i = 0; i < 2 * 2; ++i) {
+    meinA->eintraege[i] = eintraegeA[i];
+  }
 
   /* Initialisiere Ausgabematrix */
-  meinInv.m = meinInv.n = 2;
-  meinInv.eintraege = eintraegeInv;
+  meinInv = matrix_alloziere (2, 2);
 
   /* Invertiere Matrix und fange Fehlerfälle ab */
-  result = invertiere (&meinA, &meinInv);
+  result = invertiere (meinA, meinInv);
   if (result != 0) {
     printf ("Fehler Invertierung\n");
     return EXIT_FAILURE;
   }
+
+  /* Speicher wieder freigeben! */
+  matrix_freigeben (meinInv);
+  matrix_freigeben (meinA);
 
   /* Programm lief fehlerfrei durch */
   return EXIT_SUCCESS;
