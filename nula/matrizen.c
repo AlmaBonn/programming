@@ -20,6 +20,27 @@ struct s_matrix
 /* Abkürzung: typedef <alter Typ> <neuer Name dafür> */
 typedef struct s_matrix sma;
 
+/* Alloziere eine Matrix-Struktur vorgegebener Dimensionierung,
+ * mit allozierten Eintraegen (von undefinierten Werten). */
+sma *matrix_alloziere (int m, int n)
+{
+  sma *matr;
+
+  matr = (sma *) malloc (1 * sizeof (sma));
+  matr->m = m;
+  matr->n = n;
+  matr->eintraege = (double *) malloc (m * n * sizeof (double));
+
+  return matr;
+}
+
+/* Gebe allozierten Speicher der Struktur wieder frei. */
+void matrix_freigeben (sma *matr)
+{
+  free (matr->eintraege);
+  free (matr);
+}
+
 /* Input: matrix A, quadratisch, wird nicht veraendert.
  * Output: matrix Ainv = inv (A), Werte werden überschrieben
  *         und muss on input schon A->m x A->n sein.
