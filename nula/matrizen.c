@@ -93,8 +93,8 @@ main (int argc, char **argv)
 {
   int i;
 
-  /* Speicher für die Matrixeinträge */
-  double eintraegeA[4] = { 1, 5, 3, 2 };
+  /* Eingabewerte für die Matrixeinträge */
+  const double eintraegeA[4] = { 1, 5, 3, 2 };
 
   /* Speicher für die beiden Matrix-Objekte */
   sma *meinA;
