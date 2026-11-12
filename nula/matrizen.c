@@ -60,7 +60,7 @@ matrix_freigeben (sma *matr)
  * Rückgabe: 0 ohne Fehler, negativ sonst
  */
 int
-matrix_invertieren (sma *A, sma *Ainv)
+matrix_invertieren (const sma *A, sma *Ainv)
 {
   double Adet, invdet;
 
