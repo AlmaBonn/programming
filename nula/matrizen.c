@@ -4,7 +4,7 @@
 /* Für Datei- und I/O-Funktionen */
 #include <stdio.h>
 
-/* Für main-Fehlercodes */
+/* Für main-Fehlercodes und malloc, free etc. */
 #include <stdlib.h>
 
 /* Wir führen einen user-defined zusammengesetzten Typen ein */
@@ -13,15 +13,15 @@ struct s_matrix
   int m;
   int n;
 
-  /* Array mit m * n Einträgen */
+  /* Nach unserer Konvention ein Array mit m * n Einträgen */
   double *eintraege;
 };
 
 /* Abkürzung: typedef <alter Typ> <neuer Name dafür> */
 typedef struct s_matrix sma;
 
-/* Alloziere eine Matrix-Struktur vorgegebener Dimensionierung,
- * mit allozierten Eintraegen (von undefinierten Werten). */
+/* Alloziere eine Matrix-Struktur vorgegebener Dimensionierung
+ * mit allozierten Einträgen (von undefinierten Werten). */
 sma *matrix_alloziere (int m, int n)
 {
   sma *matr;
@@ -37,22 +37,25 @@ sma *matrix_alloziere (int m, int n)
 /* Gebe allozierten Speicher der Struktur wieder frei. */
 void matrix_freigeben (sma *matr)
 {
+  /* Die Einträge freigeben, solange mir sie noch erreichen können. */
   free (matr->eintraege);
+
+  /* Nach dem free ist der ursprüngliche Speicherbereich undefiniert. */
   free (matr);
 }
 
-/* Input: matrix A, quadratisch, wird nicht veraendert.
+/* Input: matrix A, quadratisch, wird nicht verändert.
  * Output: matrix Ainv = inv (A), Werte werden überschrieben
  *         und muss on input schon A->m x A->n sein.
  *
- * Fehlerfaelle:
+ * Fehlerfälle:
  *
- * Aktuell wird nur eine 2x2 Matrix korrekt bearbeitet.
- * Andernfalls wird ein Fehler zurückgegeben.
- * Eingabe- und Ausgabematrix müssen gleich dimensioniert sein.
- * Die Eingabematrix muß invertierbar seit.
+ *  - Aktuell wird nur eine 2x2 Matrix korrekt bearbeitet.
+ *    Andernfalls wird ein Fehler zurückgegeben.
+ *  - Eingabe- und Ausgabematrix müssen gleich dimensioniert sein.
+ *  - Die Eingabematrix muß invertierbar sein.
  *
- * Rueckgabe: 0 ohne Fehler, negativ sonst
+ * Rückgabe: 0 ohne Fehler, negativ sonst
  */
 int
 invertiere (sma *A, sma *Ainv)
@@ -60,7 +63,7 @@ invertiere (sma *A, sma *Ainv)
   double Adet, invdet;
 
   if (A->m != 2 || A->n != 2) {
-    printf ("Matrix falsch dimensioniert\n");
+    printf ("Falscher Fall: Matrix ist nicht 2x2\n");
     return -1;
   }
 
@@ -72,7 +75,7 @@ invertiere (sma *A, sma *Ainv)
   Adet = A->eintraege[0] * A->eintraege[3] -
          A->eintraege[1] * A->eintraege[2];
   if (Adet == 0.) {
-    printf ("Matrix singulaer\n");
+    printf ("Matrix singulär\n");
     return -1;
   }
   invdet = 1. / Adet;
@@ -93,7 +96,7 @@ main (int argc, char **argv)
   /* Speicher für die Matrixeinträge */
   double eintraegeA[4] = { 1, 5, 3, 2 };
 
-  /* Speicher für die Matrix-Metadaten */
+  /* Speicher für die beiden Matrix-Objekte */
   sma *meinA;
   sma *meinInv;
 
@@ -102,6 +105,8 @@ main (int argc, char **argv)
 
   /* Alloziere Eingabematrix */
   meinA = matrix_alloziere (2, 2);
+
+  /* Initialisiere Eingabematrix */
   for (i = 0; i < 2 * 2; ++i) {
     meinA->eintraege[i] = eintraegeA[i];
   }
@@ -112,7 +117,7 @@ main (int argc, char **argv)
   /* Invertiere Matrix und fange Fehlerfälle ab */
   result = invertiere (meinA, meinInv);
   if (result != 0) {
-    printf ("Fehler Invertierung\n");
+    printf ("Fehler bei der Invertierung\n");
     return EXIT_FAILURE;
   }
 
