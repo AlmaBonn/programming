@@ -21,7 +21,7 @@ report: ausgleich $(EINGABE)
 ausgleich: ausgleich.o
 	gcc -o $@ $^
 
-matrizen: matrizen.o
+matrizen: matrizen.o matrix_library.o
 	gcc -o $@ $^
 
 # Erzeuge Maschinencode aus einer C-Programmdatei
